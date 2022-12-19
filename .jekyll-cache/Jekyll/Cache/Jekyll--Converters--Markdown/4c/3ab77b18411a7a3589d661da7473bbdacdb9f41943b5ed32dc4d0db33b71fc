@@ -1,0 +1,203 @@
+I"<p>Updated: 21/03/2019</p>
+
+<p><strong>Problem occurs due to loading of Nvidia Drivers during booting.</strong></p>
+
+<h3 id="follow-the-following-simple-steps">Follow the following simple steps:</h3>
+
+<ol>
+  <li>
+    <p>When the grub boot loader menu is visible highlight “Try Ubuntu GNOME without installing” (use your up and down arrows)</p>
+  </li>
+  <li>
+    <p>Press “e” on your keyboard, this will allow you to edit the boot config.
+You will be brought to a page where you can make some edits.</p>
+  </li>
+  <li>
+    <p>add the following right after the word “splash”</p>
+
+    <p><code class="language-plaintext highlighter-rouge">nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait</code></p>
+  </li>
+  <li>
+    <p>Press the “f10” key to boot into the installer</p>
+  </li>
+  <li>
+    <p>When the desktop load move your mouse into the upper left hand corner, when the app launcher shows itself click on the very top icon “Install Ubuntu GNOME 18.04 LTS”</p>
+  </li>
+  <li>
+    <p>Do not install third party software.</p>
+  </li>
+  <li>
+    <p>Then follow the steps to install Ubuntu.</p>
+  </li>
+  <li>
+    <p>After installation click “Keep trying Ubuntu”</p>
+  </li>
+  <li>
+    <p>Shut down (NOT RESTART) your computer, remove installation media, hit enter.</p>
+  </li>
+  <li>
+    <p>Hold down shift then press the power button to turn on your computer. (holding down shift while powering on will load the grub boot menu)</p>
+  </li>
+  <li>
+    <p>When the grub boot menu appears press “e” and make the changes in step 3.</p>
+  </li>
+  <li>
+    <p>Press “f10”</p>
+  </li>
+  <li>
+    <p>Once your back into the desktop open your terminal. Press <code class="language-plaintext highlighter-rouge">Ctrl+Alt+T</code> if touch pad is not working and enter:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo gedit /etc/default/grub</code></p>
+  </li>
+  <li>
+    <p>Find the line that reads ‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”‘ and change it to read</p>
+
+    <p><code class="language-plaintext highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+  </li>
+  <li>
+    <p>Ignore this step if touchpad is working else add <code class="language-plaintext highlighter-rouge">i8042.reset</code> to read:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”i8042.reset quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait”‘</code></p>
+  </li>
+  <li>
+    <p>Save the changes then exit gedit.</p>
+  </li>
+  <li>
+    <p>In your terminal run the command: sudo update-grub</p>
+  </li>
+  <li>
+    <p>Reboot your computer: sudo reboot.</p>
+  </li>
+  <li>
+    <p>The PC may hang at this point which means the OS doesn’t support restart with dual boot.</p>
+  </li>
+  <li>
+    <p>Force switch off the PC from power button and on next boot follow steps 13-17 and add <code class="language-plaintext highlighter-rouge">acpi=force</code> in step 14/15 to read:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">‘GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash nouveau.modeset=0 tpm_tis.interrupts=0 acpi_osi=Linux i915.preliminary_hw_support=1 idle=nomwait acpi=force”‘</code></p>
+  </li>
+</ol>
+
+<p>Enjoy UbuntuGNOME!!!!</p>
+
+<p><strong>Next, we need to install Nvidia Drivers.</strong></p>
+
+<ol>
+  <li>
+    <p>Connect to a network</p>
+  </li>
+  <li>
+    <p>Remove all Nvidia installs(if any), run this command:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo apt-get purge nvidia* &amp; sudo apt autoremove &amp; sudo apt auto-clean</code></p>
+  </li>
+  <li>Open the file <code class="language-plaintext highlighter-rouge">sudo vim /etc/modprobe.d/blacklist.conf</code> and add these lines at the end:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> blacklist nouveau
+ blacklist vga16fb
+ blacklist rivafb
+ blacklist nvidiafb
+ blacklist rivatv
+ blacklist amd76_edac
+ alias nouveau off
+ alias lbm-nouveau off
+ options nouveau modeset=0
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Add the PPA graphic drivers:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo add-apt-repository ppa:graphics-drivers/ppa</code></p>
+  </li>
+  <li>
+    <p>Check recommended drivers:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">ubuntu-drivers devices</code></p>
+  </li>
+  <li>
+    <p>AutoInstall recommended drivers:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo ubuntu-drivers autoinstall</code></p>
+  </li>
+  <li>
+    <p>If secure boot is not switched off, while installing it asks for a password, enter and remember it. Shutdown the PC
+(DONT RESTART).</p>
+  </li>
+  <li>
+    <p>Go to step 11 if secure boot is already disabled else on grub menu select <code class="language-plaintext highlighter-rouge">system setup</code> to open boot manager.</p>
+  </li>
+  <li>
+    <p>Switch off secure boot (use right left arrow to switch tabs, enter to select and esc for back in boot manager):</p>
+
+    <p><code class="language-plaintext highlighter-rouge">security tab-&gt;secure boot-&gt;secure boot controller-&gt; disabled</code></p>
+  </li>
+  <li>
+    <p>Press F10 to Save and exit.</p>
+  </li>
+  <li>
+    <p>Verify Nvidia installation (shows a nice table with nvidia hardware and driver specs):</p>
+
+    <p><code class="language-plaintext highlighter-rouge">nvidia-smi</code></p>
+  </li>
+  <li>
+    <p>Use “nvidia-X-server” from applications or following command to select profile for next boot (available profiles are intel and nvidia)</p>
+
+    <p><code class="language-plaintext highlighter-rouge">sudo prime-select nvidia</code></p>
+  </li>
+  <li>If you are not a beginner and wish to switch profiles without reboot use: https://github.com/matthieugras/Prime-Ubuntu-18.04.</li>
+</ol>
+
+<p><strong>Potential Problems</strong></p>
+
+<p>If anything goes wrong during driver installation, you are likely to get a black screen. In that case follow these steps to
+uninstall nvidia:</p>
+
+<ol>
+  <li>
+    <p>Try “Ctrl+Alt+F1”. if console opens simply login and go to step 5 else force shutdown the PC.</p>
+  </li>
+  <li>
+    <p>Hold shift and power on the computer.</p>
+  </li>
+  <li>
+    <p>Select “advanced options” and then “recovery mode”.</p>
+  </li>
+  <li>
+    <p>Select root and press enter key twice. You will be dropped in root shell.</p>
+  </li>
+  <li>
+    <p>Run this command</p>
+
+    <p><code class="language-plaintext highlighter-rouge">apt purge nvidia*</code></p>
+  </li>
+  <li>
+    <p>Reboot</p>
+
+    <p><code class="language-plaintext highlighter-rouge">reboot</code></p>
+  </li>
+  <li>
+    <p>You can either retry the above steps to install nvidia-drivers or use ubuntu with intel card.</p>
+  </li>
+</ol>
+
+<p>Windows update which requires multiple restarts would be problem because grub selects ubuntu as default. This may lead to
+crashing of windows. Switching OFF automatic updates is RECOMMENDED. In case, you want to do an update :</p>
+
+<ol>
+  <li>
+    <p>Make windows first boot option from boot manager.</p>
+
+    <p><code class="language-plaintext highlighter-rouge">Grub-&gt;system setup-&gt;boot tab-&gt;change boot order(swap 1st and second option)</code></p>
+  </li>
+  <li>
+    <p>Perform the update and shut down the PC.</p>
+  </li>
+  <li>
+    <p>Press <code class="language-plaintext highlighter-rouge">esc</code> repeatedly to open boot menu. Select <code class="language-plaintext highlighter-rouge">enter setup</code>.</p>
+  </li>
+  <li>
+    <p>Restore the boot tab to previous settings.</p>
+  </li>
+</ol>
+
+<p>Source: <a href="https://jeremymdyson.wordpress.com/2016/04/27/ubuntugnome-16-04-on-asus-rog-gl552v/">ubuntugnome-16-04-on-asus-rog-gl552v</a></p>
+:ET

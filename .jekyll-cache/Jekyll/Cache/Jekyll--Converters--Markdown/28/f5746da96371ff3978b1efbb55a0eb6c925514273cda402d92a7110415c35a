@@ -1,0 +1,110 @@
+I"9<p>OpenCV is the most widely used Computer Vision Library out there. It is
+very powerful and offers many features suiting the needs of anyone requiring
+Image Processing. This tutorial is a slightly modified version of
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">this</a>
+with a simpler method of compiling.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>The simplest possible install is always from the repositories.</p>
+
+<p>For Debian/Ubuntu/Mint:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libopencv-dev
+</code></pre></div></div>
+
+<p>For Other distros like Arch, you can find the respective commands on the internet.</p>
+
+<p>If you want python support too, you will need to install the python support by:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install python-opencv
+</code></pre></div></div>
+
+<p>The repository versions of OpenCV are usually not the latest versions and you might miss
+some features.</p>
+
+<p>If you need specific features or a newer version of OpenCV (let’s say for python3 support),
+you could look <a href="milq.github.io/install-opencv-ubuntu-debian">here</a> for a very good guide
+on compiling OpenCV from source.</p>
+
+<h2 id="compiling-and-running-programs-in-c">Compiling and running Programs in C++</h2>
+
+<p>Now that OpenCV has been installed, you might want to run a program to see if it is working
+properly. I would suggest the following program:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;opencv2/opencv.hpp&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">cv</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="c1">// A camera object</span>
+  <span class="n">VideoCapture</span> <span class="n">cam</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="c1">// An image object</span>
+  <span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
+
+  <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1">// Storing a frame from camera to image</span>
+    <span class="n">cam</span> <span class="o">&gt;&gt;</span> <span class="n">img</span><span class="p">;</span>
+
+    <span class="c1">// Do Your Operations Here</span>
+
+    <span class="c1">// Displaying image in a window named "Image"</span>
+    <span class="n">imshow</span><span class="p">(</span><span class="s">"Image"</span><span class="p">,</span><span class="n">img</span><span class="p">);</span>
+
+    <span class="c1">// Waiting for a keypress for 5ms</span>
+
+    <span class="cm">/**
+      * WaitKey is very important.
+      * Even if you don't want a delay/keypress you should
+      * use it with minimum delay otherwise, the gui does not update
+      */</span>
+    <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">waitKey</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+    <span class="c1">// Quit on pressing q</span>
+    <span class="k">if</span><span class="p">(</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'q'</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="sc">'Q'</span><span class="p">)</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This simple program just takes input from your webcam and displays it in a window.
+You can save it in a file named <code class="language-plaintext highlighter-rouge">test.cpp</code>.</p>
+
+<p>Now, in order to compile this program, execute this from the terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>g++ <span class="nt">-o</span> Test /path/to/test.cpp <span class="sb">`</span>pkg-config <span class="nt">--libs</span> opencv<span class="sb">`</span>
+</code></pre></div></div>
+
+<p>The parameter after <code class="language-plaintext highlighter-rouge">-o</code>, i.e., <code class="language-plaintext highlighter-rouge">Test</code> refers to the name of the executable created after compiling.</p>
+
+<p>After compilation finishes (hopefully without any errors), you can run this test program with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./Test
+</code></pre></div></div>
+
+<p>For a more involved and complex compilation involving <code class="language-plaintext highlighter-rouge">cmake</code>, you can look
+<a href="http://students.iitk.ac.in/robocon/docs/doku.php?id=programming:image_processing_intro">here</a> and
+<a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_gcc_cmake/linux_gcc_cmake.html#linux-gcc-usage">here</a>.</p>
+
+<h2 id="learning-opencv">Learning OpenCV</h2>
+
+<p>Now that you can compile and execute OpenCV programs, you are ready to begin learning OpenCV.
+The OpenCV <a href="http://docs.opencv.org/2.4/doc/tutorials/tutorials.html">tutorials</a> on their website is a
+good starting point. My suggested order of reading is:</p>
+
+<ul>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/display_image/display_image.html#display-image">Load and display an image</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/adding_images/adding_images.html#adding-images">Adding Images</a></li>
+  <li><a href="http://docs.opencv.org/2.4/doc/tutorials/core/basic_geometric_drawing/basic_geometric_drawing.html#drawing-1">Basic Drawing</a></li>
+  <li>Followed by all tutorials in the <a href="http://docs.opencv.org/2.4/doc/tutorials/imgproc/table_of_content_imgproc/table_of_content_imgproc.html#table-of-content-imgproc">Image Processing Module</a></li>
+</ul>
+
+<p>The above order is because the initial tutorials tend to be more theoretical and focussing on the internals of OpenCV
+rather than actual usage.</p>
+
+<p>Plus, you might not need to see all the tutorials depending upon your needs.</p>
+
+<p>Best of Luck developing your OpenCV application.</p>
+:ET

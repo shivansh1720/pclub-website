@@ -1,0 +1,303 @@
+I"�E<h1 id="basics-of-r">Basics Of R</h1>
+
+<h3 id="why-learn-r-">Why Learn R ?</h3>
+<ul>
+  <li>Free, Open Source, Cross Platform Compatible</li>
+  <li>No <em>Windows</em>, No Doors – R runs on all the platforms. Just name it and you got it!!</li>
+  <li>R is a language evolved from the <strong>Language</strong> <strong><em>S</em></strong> (<em>created by Bell Technologies</em>)</li>
+  <li>I bet plotting graphs could never have been easier</li>
+  <li>
+    <p>It is the leading open source statistical and data analysis programming language,  as it handles and manipulates data too efficiently.</p>
+  </li>
+  <li>I personally recommend you to use R on <em>UNIX</em> machines . I haven’t tried it on <em>Windows</em> yet :P</li>
+  <li>Still not convinced ? <a href="http://blog.revolutionanalytics.com/2012/07/a-big-list-of-the-things-r-can-do.html">Here</a> is a list of things that R can do . Keep Counting !!</li>
+</ul>
+
+<p><strong><em>Having Fun with R</em></strong></p>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"sudoku"</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">sudoku</span><span class="p">)</span><span class="w">
+</span><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">readSudoku</span><span class="p">(</span><span class="s2">"c:/hard sudoku problem.txt"</span><span class="p">)</span><span class="w">
+</span><span class="n">solveSudoku</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>Wondering what the above 4 lines of code can do ? Well It can solve the <strong>hardest</strong> <em>Soduku Puzzle</em> ever made ! Sounds Cool ?</p>
+
+<p>Google <strong><em>“Making a word cloud in R”</em></strong> and see how easy it is !</p>
+
+<h2 id="some-pre-requiste-knowledge">Some Pre Requiste Knowledge</h2>
+
+<ul>
+  <li>How to start R ?</li>
+  <li>Will their be an IDE where I can code ?</li>
+</ul>
+
+<p>The installation instructions for various platforms (including Non <em>UNIX</em> products) can be found <a href="https://cran.r-project.org/doc/manuals/r-release/R-admin.html">here</a></p>
+
+<p>After Installation. Just open your terminal and type <code class="language-plaintext highlighter-rouge">R</code></p>
+
+<h3 id="some-important-things-first"><strong>Some important things first</strong></h3>
+
+<ul>
+  <li>Whenever you are done with this language or simply wanna quit this Just type <code class="language-plaintext highlighter-rouge">q()</code></li>
+  <li>Whenever you are struck anywhere just type <code class="language-plaintext highlighter-rouge">help(commandname)</code></li>
+  <li><strong><em>R</em></strong> is an expression language and is <em>case sensitive</em></li>
+  <li>
+    <p>“R” &amp; “r” are two different things</p>
+  </li>
+  <li>Whenever you type an expression, the value is <strong>calculated , printed and lost</strong>.</li>
+  <li>You better save the results of your expressions in a variable</li>
+  <li>
+    <p>An <strong>assignment</strong> also evaluates an expression and passes the value to a variable but the result is <strong><em>not automatically printed</em></strong></p>
+  </li>
+  <li>Comments can be put anywhere starting with a Hashmark ( <code class="language-plaintext highlighter-rouge">#</code> )</li>
+  <li>Commands are separated either by a <strong><em>semi-colon</em></strong> <code class="language-plaintext highlighter-rouge">;</code> or by a <strong><em>newline</em></strong></li>
+  <li>If your command is incomplete R by default will give a <code class="language-plaintext highlighter-rouge">+</code> prompt and will continue to give a <code class="language-plaintext highlighter-rouge">+</code> prompt until your syntax is corrected.</li>
+  <li><strong><em>NaN</em></strong> stands for Not a Number</li>
+</ul>
+
+<h3 id="programming-in-r-finally"><strong><em>Programming in R Finally</em></strong></h3>
+
+<p>After reading so much about <strong><em>R</em></strong> . It’s time to really start coding</p>
+
+<h4 id="loading-commands-in-r">Loading commands in R</h4>
+
+<p>If you already have a .R extension file with certain commands already written , you can load it with the following syntax</p>
+
+<p><code class="language-plaintext highlighter-rouge">source(“nameofthefile".R)</code></p>
+
+<p>Wanna store all the outputs for a particular session ?</p>
+
+<p><code class="language-plaintext highlighter-rouge">sink (“nameoffile”)</code></p>
+
+<p>Simliar to a <em>UNIX</em> terminal you can type <code class="language-plaintext highlighter-rouge">ls()</code> to view all the objects you created in <strong><em>R</em></strong> for a particular session.</p>
+
+<blockquote>
+  <p>The collection of objects currently stored is called the <strong><em>workspace</em></strong></p>
+</blockquote>
+
+<p>How to remove an object ?</p>
+
+<p>Use <code class="language-plaintext highlighter-rouge">rm(objectname1,objectname2)</code></p>
+
+<p><strong>Removing all objects</strong></p>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">rm</span><span class="p">(</span><span class="n">list</span><span class="o">=</span><span class="n">ls</span><span class="p">())</span></code></pre>
+</figure>
+
+<p><em>Try to understand this command on your own.It’s pretty easy</em></p>
+
+<h4 id="data-types">Data Types</h4>
+
+<p>Used Python ? <strong><em>R</em></strong> might look familiar!</p>
+
+<p>You can do mathematical operations like</p>
+
+<p><code class="language-plaintext highlighter-rouge">1+1</code> : Prints 2</p>
+
+<p>Time to make vectors!</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">test</code> : name of the variable where the vector is stored</p>
+
+  <p><code class="language-plaintext highlighter-rouge"> &lt;-</code>  :  assignment operator (points in direction of the variable in which value is to be updated/stored)</p>
+
+  <p><code class="language-plaintext highlighter-rouge">c()</code> : a function used to concatenate</p>
+</blockquote>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="s2">"Hello World"</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="s2">"Hello "</span><span class="p">,</span><span class="s2">"World"</span><span class="p">)</span></code></pre>
+</figure>
+
+<p><br />
+Here you can see different ways to defining the same string.</p>
+
+<p><code class="language-plaintext highlighter-rouge">1:9</code> :   Creates sequence : <strong>1 2 3 4 5 6 7 8 9</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">1.5:10</code> Creates sequence : <strong>1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5 9.5</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">seq(intial,final,by,length)</code> : Function use to create sequence; we can provide increment values or number of values</p>
+
+<p><code class="language-plaintext highlighter-rouge">rep()</code>:  Function used for Replicating</p>
+
+<p><strong>Examples</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">seq(1,5,by=1.5)</code></td>
+      <td><strong>1.0 2.5 4.0</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">seq(1,5,length=9)</code></td>
+      <td><strong>1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rep(10,10)</code></td>
+      <td><strong>10 10 10 10 10 10 10 10 10 10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+<strong>Try it yourself</strong></p>
+
+<p>Try to understand the code snippet below, guess the output and then run on <strong><em>R</em></strong> and check</p>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">temp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="w">
+</span><span class="n">matrix</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span></code></pre>
+</figure>
+
+<h4 id="operations-on-vector">Operations on vector</h4>
+
+<p>You can do almost all possible arithemetic operations on a vector
+Adding 2 vectors of same size, different size, multiplying, dividing, <code class="language-plaintext highlighter-rouge">log()</code>,<code class="language-plaintext highlighter-rouge">exp()</code>,<code class="language-plaintext highlighter-rouge">sin()</code>, <code class="language-plaintext highlighter-rouge">sum()</code>,<code class="language-plaintext highlighter-rouge">length()</code>,<code class="language-plaintext highlighter-rouge">var()</code>,<code class="language-plaintext highlighter-rouge">mean()</code>,<code class="language-plaintext highlighter-rouge">sort()</code>,<code class="language-plaintext highlighter-rouge">max()</code>,<code class="language-plaintext highlighter-rouge">min()</code></p>
+
+<blockquote>
+  <p><strong>pmin and pmax</strong> :Returns parallel max and min of input values</p>
+
+  <p><em>Example</em>
+Run these commands and you will get a clear idea of pmin and pmax</p>
+</blockquote>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">7</span><span class="p">,</span><span class="m">9</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+</span><span class="n">c</span><span class="w"> </span><span class="o">-&lt;</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">9</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">8</span><span class="p">,</span><span class="m">6</span><span class="p">)</span><span class="w">
+</span><span class="n">pmin</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="n">pmax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span><span class="w">
+</span><span class="nf">min</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span></code></pre>
+</figure>
+
+<p>To intialize a vector with a value <code class="language-plaintext highlighter-rouge">numeric()</code> is used</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a &lt;- numeric(10)` : a has now value 10
+</code></pre></div></div>
+
+<p><strong>An Intersting Thing to Note</strong></p>
+
+<p>Try the following commands</p>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">numeric</span><span class="p">()</span><span class="w">
+</span><span class="n">test</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="n">test</span></code></pre>
+</figure>
+
+<p>You should now see <strong>NA’s</strong> in the vector</p>
+
+<p><strong>NA</strong> stands for Not Available</p>
+
+<p><strong><em>NA</em></strong> : Missing values are represented by the symbol NA (not available)</p>
+
+<p>How to check for <strong>NA</strong> in a vector ? : <code class="language-plaintext highlighter-rouge">is.na()</code></p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight">
+  <pre><code class="language-r" data-lang="r"><span class="n">test</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="kc">NA</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">is.na</span><span class="p">(</span><span class="n">test</span><span class="p">)</span><span class="w">
+</span><span class="n">check</span></code></pre>
+</figure>
+
+<p>check will be <strong>FALSE</strong> for non NA values and <strong>TRUE</strong> for NA values</p>
+
+<p>How to remove <strong>NA</strong> values ? Let’s substitute NA with -1
+<code class="language-plaintext highlighter-rouge">test[is.na(test)] &lt;- -1</code></p>
+
+<h4 id="logical-vectors">LOGICAL VECTORS</h4>
+<p>Can contain <strong>TRUE</strong> or <strong>FALSE</strong>.  What else ? <strong>NA</strong> : Don’t forget this :P</p>
+
+<p>Example: <code class="language-plaintext highlighter-rouge">test &lt;- 5&lt;6</code></p>
+
+<p><strong>Operations on Logical Vectors</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">!</code>: For Negation</p>
+
+<p><code class="language-plaintext highlighter-rouge">&amp;</code> or <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> : for <em>Logical AND</em></p>
+
+<p><code class="language-plaintext highlighter-rouge">|</code> or <code class="language-plaintext highlighter-rouge">||</code> : for <em>LOGICAL OR</em></p>
+
+<h4 id="determining-the-type-of-a-variable">Determining the type of a variable</h4>
+<p><code class="language-plaintext highlighter-rouge">typeof(variablename)</code> : Return the type of variable</p>
+<blockquote>
+  <p>Check out <code class="language-plaintext highlighter-rouge">mode()</code> and <code class="language-plaintext highlighter-rouge">class()</code> and read about the difference between the three</p>
+</blockquote>
+
+<p><em>We will discuss this in the next part :D</em></p>
+
+<h5 id="mathematical-basic-operations">Mathematical Basic Operations</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Syntax</th>
+      <th>Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sqrt(a)</code></td>
+      <td>Returns the square root of <strong><em>a</em></strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">exp(a)</code></td>
+      <td>Return the value of exponent of <strong><em>a</em></strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">log(a)</code></td>
+      <td>Returns the Logarithm base <strong>e</strong> of <strong><em>a</em></strong> Try <code class="language-plaintext highlighter-rouge">log10()</code> for base <strong>10</strong></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">var()</code></td>
+      <td>Returns Variance of a vector which is passed as an argument</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sd()</code></td>
+      <td>Returns	Standard Deviation of a vector which is passed as an argument</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<blockquote>
+  <p>Note : Providing an input to a function outside it’s domain will result in NaN <strong><em>Not a Number</em></strong></p>
+</blockquote>
+
+<h4 id="strings">Strings</h4>
+
+<p>Also called <strong><em>Character Vectors</em></strong> follow <strong>C</strong> type escape character <code class="language-plaintext highlighter-rouge">\</code></p>
+
+<p>Combining Characters to Numbers !</p>
+
+<p><code class="language-plaintext highlighter-rouge">test &lt;- paste(c("X,"Y"),1:10,sep="")</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">test</code></p>
+
+<p>The Output should look like <strong><em>“X1”  “Y2”  “X3”  “Y4”  “X5”  “Y6”  “X7”  “Y8”  “X9”  “Y10”</em></strong></p>
+
+<blockquote>
+  <p><strong><em>paste()</em></strong></p>
+
+  <p>Function takes an arbitrary number of arguments and concatenates them one by
+one into character strings.</p>
+
+  <p>The arguments are by default separated in the result by a single blank character, but this can be
+changed by the named argument, <code class="language-plaintext highlighter-rouge">sep=</code></p>
+</blockquote>
+
+<p><strong><em>That’s all for the Part 1 :D , We will be posting Part 2 soon</em></strong>
+** We will look into arrays, factors, table, matrix, data frames in the next part **</p>
+:ET

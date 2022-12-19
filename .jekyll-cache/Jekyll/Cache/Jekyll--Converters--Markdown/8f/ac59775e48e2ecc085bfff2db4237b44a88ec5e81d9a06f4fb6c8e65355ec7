@@ -1,0 +1,24 @@
+I"Y<h1 id="air-war"><a href="http://github.com/jaskirat1208/Windows-Game">Air war</a></h1>
+
+<p>This is a single player air-fight based game built on Unity3D platform. The scripts were written in C# language using Microsoft Visual Studio</p>
+
+<p>This game comprises of two modes-</p>
+<ul>
+  <li><strong>Arcade Mode:</strong> The war is fought on three battle ground. One has to lead his forces through all these battlegrounds to lead his forces to victory.
+    <ul>
+      <li><strong>Desert</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p1.PNG?raw=true" alt="" /></li>
+      <li><strong>Hills</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p2.PNG?raw=true" alt="" /></li>
+      <li><strong>Icy Mountains</strong>
+  <img src="https://github.com/JitenDhawan/Windows-Game/blob/master/p3.PNG?raw=true" alt="" /></li>
+    </ul>
+  </li>
+  <li><strong>Survival Mode:</strong> In this one has to survive in the battlefield as long as he can. However, battleground doesn’t change.</li>
+</ul>
+
+<p>Received a <strong>Special Mention</strong> during the Science &amp; Technology Summer Camp 2016.</p>
+
+<h4 id="github-air-war">Github: <a href="http://github.com/jaskirat1208/Windows-Game">Air War</a></h4>
+<h4 id="video-air-waryoutube">Video: <a href="https://www.youtube.com/watch?v=MJNwBx_Hbhg">Air War(Youtube)</a></h4>
+:ET

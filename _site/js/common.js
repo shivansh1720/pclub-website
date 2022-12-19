@@ -78,9 +78,6 @@ $(document).ready(function() {
   /* =======================
   // LazyLoad Images
   ======================= */
-  var lazyLoadInstance = new LazyLoad({
-    elements_selector: '.lazy'
-  })
 
 
   // =====================
@@ -101,10 +98,6 @@ $(document).ready(function() {
     }).done(function(data) {
       var posts = $('.grid__post', data);
       $('.grid').append(posts);
-
-      var lazyLoadInstance = new LazyLoad({
-        elements_selector: '.lazy'
-      })
 
       $load_posts_button.text('Load more');
       pagination_next_page_number++;

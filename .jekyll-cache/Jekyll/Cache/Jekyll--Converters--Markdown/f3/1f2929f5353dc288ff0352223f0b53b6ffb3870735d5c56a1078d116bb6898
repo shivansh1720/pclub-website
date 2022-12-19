@@ -1,0 +1,79 @@
+I"�<h1 id="plugin-nerdcommenter">Plugin: <a href="https://github.com/scrooloose/nerdcommenter">NERDCommenter</a></h1>
+
+<p><a href="https://github.com/scrooloose/nerdcommenter">NERDCommenter</a> is an awesome
+plugin for commenting code. It works primarily
+in the normal mode and is aimed at more efficient coding and debugging.</p>
+
+<p>What it does is allow you to comment out a line in any file using the
+same keybindings. Let’s say you want to have the shortcut to comment
+out a line as <code class="language-plaintext highlighter-rouge">//</code> because that is easy to type. Now for a block of
+code, you go to a particular line and press <code class="language-plaintext highlighter-rouge">//</code>, the line gets commented.
+You press <code class="language-plaintext highlighter-rouge">//</code> again, the line gets uncommented into the <code class="language-plaintext highlighter-rouge">before</code> state.
+This adds a very powerful tool to your workflow allowing you comment
+out as well as comment in lines very fast. You could also type something
+like <code class="language-plaintext highlighter-rouge">5//</code> to comment out 5 lines.</p>
+
+<p>This is what would happen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Filetype</th>
+      <th style="text-align: center">Before</th>
+      <th style="text-align: center">After</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">C</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">int a = 5;</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">//int a = 5;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Python</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">a = 5;</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">#a = 5;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">.vimrc</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">set rnu</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">"set rnu</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="installation">Installation</h2>
+<p>For vim-plug, add the following line to your <code class="language-plaintext highlighter-rouge">.vimrc</code>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-vim" data-lang="vim">Plug <span class="s1">'scrooloose/nerdcommenter'</span></code></pre>
+</figure>
+
+<h2 id="configuration">Configuration</h2>
+<p>Read the <code class="language-plaintext highlighter-rouge">README.md</code> as well as <code class="language-plaintext highlighter-rouge">:help commenter</code> for a complete description
+of features. If you are wondering what is <code class="language-plaintext highlighter-rouge">&lt;leader&gt;</code>, it is a special <code class="language-plaintext highlighter-rouge">power-key</code>
+in vim with default value <code class="language-plaintext highlighter-rouge">\</code>. You can change it to whatever you like. Now to get
+the setting we discussed before, i.e., fast commenting out and in using <code class="language-plaintext highlighter-rouge">//</code>.</p>
+
+<p>In the <a href="https://github.com/scrooloose/nerdcommenter/blob/master/README.md">README</a>,
+you will find that <code class="language-plaintext highlighter-rouge">&lt;leader&gt;c&lt;space&gt;</code> has the behaviour we want
+of toggling comments. So in order to have that same command for <code class="language-plaintext highlighter-rouge">//</code>, you will
+need to map <code class="language-plaintext highlighter-rouge">//</code> to it:</p>
+
+<figure class="highlight">
+  <pre><code class="language-vim" data-lang="vim">nmap <span class="sr">//</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">c</span><span class="p">&lt;</span>space<span class="p">&gt;</span>
+vmap <span class="sr">//</span> <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class="k">cs</span>
+<span class="c">" I map // to &lt;leader&gt;cs for sexy commenting instead of the normal</span>
+<span class="c">" It is my own setting and you may wish to change it to &lt;leader&gt;c&lt;space&gt; or &lt;leader&gt;ci</span></code></pre>
+</figure>
+
+<p>And now open up your favourite file and try this out. It is very efficient and something
+very valuable to my current workflow. I have found myself pressing <code class="language-plaintext highlighter-rouge">//</code> on someone else’s
+machine to comment code ( which usually works in C :P ) many times.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<p>In order to understand, why we used <code class="language-plaintext highlighter-rouge">nmap</code>
+you might want to <a href="http://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript</a>.
+Its not compulsory, but it allows you to modify vim to your settings more easily.</p>
+:ET
