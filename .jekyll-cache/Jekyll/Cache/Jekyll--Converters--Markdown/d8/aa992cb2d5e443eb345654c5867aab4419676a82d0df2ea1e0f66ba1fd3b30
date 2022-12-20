@@ -1,0 +1,15 @@
+I"<p>You are given <strong>N</strong> sticks, the length of the i<sup>th</sup> stick being a<sub>i</sub>. As your professor is very interested in triangles he gives you a problem:
+From the N given sticks, choose <strong>3</strong> sticks that form a triangle. If there are many such triangles, choose the sticks in such a way such that the perimeter of the triangle formed is maximized. If there are many such triangles output the one that maximizes the largest side. If still there are many then output one that maximizes the second side. If still there are many output any one of them.</p>
+
+<p><strong>Input</strong><br />
+The first line contains a single integer T, denoting the number of test cases.<br />
+The first line of each test case contains a single integer N denoting the number of sticks. The next line contains N integers, the i<sup>th</sup> integer denoting the length of the i<sup>th</sup> stick.</p>
+
+<p><strong>Output</strong><br />
+For each test case, print three integers, the lengths of the sides that will form the triangle. Print the lengths in increasing order. If you cannot form any triangle from the given sticks output -1.</p>
+
+<p><strong>Constraints</strong> <br />
+1&lt;=T&lt;=10<br />
+1 &lt;= N &lt;= 10<sup>5</sup><br />
+1&lt;= a<sub>i</sub> &lt;= 10<sup>9</sup></p>
+:ET

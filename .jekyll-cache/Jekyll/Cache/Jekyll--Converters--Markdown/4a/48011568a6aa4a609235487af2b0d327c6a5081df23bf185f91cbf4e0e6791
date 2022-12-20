@@ -1,0 +1,28 @@
+I"‚<h1 id="antaragni-app-16">Antaragni App 16</h1>
+
+<h2 id="synopsis">Synopsis</h2>
+
+<p>The objective of this project was to update the android app Antaragni-App 15 making it more dynamic and user-friendly for the Antaragni-16, the Annual cultural festival of IITK. Major changes include integration with the online database of Antaragni.
+The App is available at <a href="https://play.google.com/store/apps/details?id=antaragni.in.antaragni">https://play.google.com/store/apps/details?id=antaragni.in.antaragni</a></p>
+
+<p><img src="https://raw.githubusercontent.com/saransh7/pics/master/14729083_1280036892028146_8754690254501950483_n.jpg" alt="image" /></p>
+
+<h2 id="updates-included">Updates Included</h2>
+<ul>
+  <li>Integrating Real-Time database</li>
+  <li>Extending its support to API 24(permission access)</li>
+  <li>Integrating Facebook Sign-in</li>
+  <li>Updating Theme(Hues of Bliss)</li>
+  <li>Various Bug fixes in Antaragni-App 15</li>
+  <li>Inclusion of Google Map services</li>
+</ul>
+
+<p>Github Repositories</p>
+<ol>
+  <li>Project-Ant : <a href="https://github.com/navya/Project-Ant">https://github.com/navya/Project-Ant</a></li>
+  <li>Antaragni-App : <a href="https://github.com/kunalapila/Antaragni-App">https://github.com/kunalapila/Antaragni-App</a></li>
+</ol>
+
+<h1 id="project-timeline">Project Timeline</h1>
+<p>At first changes were made to the <a href="https://github.com/navya/Project-Ant">Project-Ant</a> repository during summers-16. Afterwards during mid-october work shifted to a new repository <a href="https://github.com/kunalapila/Antaragni-App">Antaragni-App</a> using basic framework of Project-Ant in collaboration with the Updates.</p>
+:ET

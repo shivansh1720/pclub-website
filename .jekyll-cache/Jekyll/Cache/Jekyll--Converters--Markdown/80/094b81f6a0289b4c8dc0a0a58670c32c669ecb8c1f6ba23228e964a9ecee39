@@ -1,0 +1,18 @@
+I"¼<p>Given an array a of N numbers , you have to find the number of pair of indices <em>i</em> and <em>j</em> that satisfy the following relation:</p>
+<ol>
+  <li>i &lt; j</li>
+  <li>a<sub>i</sub> &gt; a<sub>j</sub></li>
+  <li>gcd( a<sub>i</sub> , a<sub>j</sub> )=1</li>
+</ol>
+
+<p><strong>Input</strong><br />
+The first line of the input contains a single integer N - denoting the size of the array.<br />
+The next line contains N space separated integers denoting the array a.</p>
+
+<p><strong>Output</strong>  <br />
+Output a single integer - the answer to the problem stated above.</p>
+
+<p><strong>Constraints</strong><br />
+1&lt;=N&lt;=10<sup>5</sup><br />
+1&lt;=a<sub>i</sub>&lt;=10<sup>5</sup></p>
+:ET

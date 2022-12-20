@@ -1,0 +1,31 @@
+I"C<h4 id="description">Description</h4>
+
+<p>Develop a music app for the campus with the following features:</p>
+<ul>
+  <li>See music that friends are playing currently</li>
+  <li>Private mode to hide currently playing music</li>
+  <li>Music rooms - to livestream music to all users currently using the app and live updation of playlists</li>
+</ul>
+
+<p>This project will have multiple members. (approximately 3 to 4)</p>
+
+<h4 id="application-task">Application Task</h4>
+<ul>
+  <li>Setup the below mentioned repo and get it run locally.</li>
+</ul>
+
+<h4 id="relevant-technologies">Relevant Technologies</h4>
+<ul>
+  <li>TypeScript/JavaScript</li>
+</ul>
+
+<h4 id="repository">Repository</h4>
+<ul>
+  <li><a href="https://github.com/Cloud-Player/web">Music Player</a></li>
+</ul>
+
+<h4 id="mentor">Mentor</h4>
+<ul>
+  <li>Yugesh Kothari</li>
+</ul>
+:ET

@@ -1,0 +1,33 @@
+I"¹<h4 id="description">Description</h4>
+
+<ul>
+  <li>The aim is to streamline all further development of LifeIITK such that there is consistency and reproducibility across developers.</li>
+  <li>Setup proper development, test and production environments for lifeiitk.</li>
+</ul>
+
+<h4 id="relevant-technologies">Relevant Technologies</h4>
+<ul>
+  <li>Docker</li>
+  <li>Travis CI</li>
+</ul>
+
+<h4 id="application-task">Application Task</h4>
+<p>Write a <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> that spins up 3 docker containers</p>
+<ul>
+  <li>node.js backend</li>
+  <li>react frontend</li>
+  <li>mysql database.</li>
+</ul>
+
+<p>For reference look up <a href="https://github.com/yugeshk/hotel-management/blob/master/docker-compose.yml">this</a></p>
+
+<h4 id="repository">Repository</h4>
+<ul>
+  <li><a href="https://github.com/life-iitk">Life@IITK</a></li>
+</ul>
+
+<h4 id="mentor">Mentor</h4>
+<ul>
+  <li>Yugesh Kothari</li>
+</ul>
+:ET

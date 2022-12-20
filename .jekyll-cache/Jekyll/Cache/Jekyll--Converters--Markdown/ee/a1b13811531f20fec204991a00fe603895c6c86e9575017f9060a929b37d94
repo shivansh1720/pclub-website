@@ -1,0 +1,14 @@
+I"g<p>There are <strong>N</strong> boxes. The i<sup>th</sup> box contains a<sub>i</sub> candies. The frog Om Nom is sitting in box number 1. Om Nom wants to collect as many candies as he can. However, Om Nom jumps in a peculiar fashion. Om Nom can jump from box number <strong>j</strong> to box number <strong>i</strong> only if <em>j divides i</em>. Whenever Om Nom lands in a box, he collects all the candies in that box. You have to report the maximum number of Candies that Om Nom can collect for all i from 1 to N if i is the last box that Om Nom visits.See the samples for more details.</p>
+
+<p><strong>Constraints</strong><br />
+0&lt;=a<sub>i</sub>&lt;=100000<br />
+1&lt;=N&lt;=100000</p>
+
+<p><strong>Input</strong><br />
+The first line contains the number N.<br />
+The second line contains the array a , the i<sup>th</sup> integer denoting the number of candies in the i<sup>th</sup> box.</p>
+
+<p><strong>Output</strong><br />
+Print N integers-the i<sup>th</sup> integer should be the maximum number of candies that Om Nom can collect if the i<sup>th</sup> box is his final box (i.e his sequence of jumps ends at i).</p>
+
+:ET

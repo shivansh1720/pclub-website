@@ -1,0 +1,24 @@
+I"!<h4 id="description">Description</h4>
+
+<ul>
+  <li>The current buy and sell forum of iitk on facebook is very disorganised and chaotic.</li>
+  <li>Develop and integrate a portal to buy and sell things on campus into the Life@IITK app.</li>
+</ul>
+
+<h4 id="relevant-technologies">Relevant Technologies</h4>
+<ul>
+  <li>Python</li>
+  <li>Django</li>
+  <li>React</li>
+</ul>
+
+<h4 id="repository">Repository</h4>
+<ul>
+  <li><a href="https://github.com/life-iitk">Life@IITK</a></li>
+</ul>
+
+<h4 id="mentor">Mentor</h4>
+<ul>
+  <li>Aditya Gulati</li>
+</ul>
+:ET

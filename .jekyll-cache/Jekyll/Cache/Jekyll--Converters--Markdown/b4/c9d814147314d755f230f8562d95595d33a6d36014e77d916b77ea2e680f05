@@ -1,0 +1,62 @@
+I"�<h3 id="angularjs-superheroic-javascript-framework">AngularJS: Superheroic Javascript Framework</h3>
+
+<p>For all those who have worked with HTML and CSS, you know very well that HTML is great for declaring static documents. It doesn’t do so <strong>well</strong> for declaring dynamic views in web-applications. Angular lets us create expressive, readable, quick to develop dynamic web pages. AngularJS framework is written in <em>Javascript</em>. In this article, I’m going to be introducing you to very basic AngularJS, essentially talking about directives, expressions, controllers, data binding and filters.</p>
+
+<h4 id="prerequisites">Prerequisites</h4>
+<ul>
+  <li><strong>Elementary</strong> knowledge about HTML, CSS and Javascript.</li>
+  <li>Desire to develop responsive and dynamic web pages.</li>
+</ul>
+
+<h4 id="angular-directives">Angular Directives</h4>
+<p>Let us begin now. We’ll start with a website, albeit a simple one, that IITK’s alumni have <a href="http://sid17.github.io/iitky12/#/">made</a>. The purpose of this website is for Y12 batch to stay in touch with batch mates and know the whereabouts of Y12 junta. A brilliant idea. We won’t be talking about the backend that is how the data is added and how the website fetches the data.</p>
+
+<p>Now if you right click anywhere on the site and chose inspect element, a small window opens in your browser. Find the body tag and you would find something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;body ng-app='iitky12App' ng-init='loadSettings()' ng-controller='AppCtrl' class='ng-scope'&gt;
+</code></pre></div></div>
+
+<p>So what exactly is ng-app, ng-init and ng-controller?
+These are the angular <strong>directives</strong>. Directives are markers on a DOM (Document Object Model) element (such as an attribute, element name, comment or CSS class) that tell AngularJS’s HTML compiler to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children.
+Some common directives:</p>
+
+<ul>
+  <li>The <strong>ng-app</strong> directive tells AngularJS that the <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> element is the “owner” of an AngularJS application.</li>
+  <li>The <strong>ng-init</strong> directive initializes AngularJS application variables.</li>
+  <li>The <strong>ng-model</strong> directive binds the value of HTML controls (input, select, textarea) to application data. The ng-model directive provides a two-way binding between the model and the view.</li>
+  <li>The <strong>ng-repeat</strong> directive actually clones HTML elements once for each item in a collection. Consider this like a loop for HTML elements.</li>
+</ul>
+
+<h4 id="angular-expressions">Angular Expressions</h4>
+
+<p>AngularJS binds data to HTML using <strong>Expressions</strong>.AngularJS expressions can be written inside double braces:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{ expression }}
+</code></pre></div></div>
+
+<p>If you remove the ng-app directive, HTML will display the expression as it is, without solving it.</p>
+
+<h4 id="two-way-data-binding">Two Way Data binding</h4>
+
+<p>Data binding in AngularJS is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the modelis updated as well. This happens immediately and automatically, which makes sure that the model and the view is updated at all times. ng-model directive mentioned earlier, is used for two way data binding.</p>
+
+<h4 id="angular-controllers">Angular Controllers</h4>
+
+<p>AngularJS controllers control the data of AngularJS applications. AngularJS controllers are regular JavaScript Objects. AngularJS applications are controlled by controllers. The ng-controller directive defines the application controller. Like in the site mentioned in the beginning, in the body tag <code class="language-plaintext highlighter-rouge">ng-controller='AppCtrl'</code> has been used. This means AppCtrl is defined as the application controller.</p>
+
+<h4 id="angular-filters">Angular Filters</h4>
+
+<p>Perhaps again we should visit the site I mentioned earlier. Let us type CSE in the search bar ( :P ). Without taking any time, we get the results which have CSE linked to them. How does this happen?</p>
+
+<p>Angular Filters!! They give us the ability to format and filter the output according to our needs. So by using two way data binding we are able to use the search text entered and then filter the database using Angular Filters. We can also use filters to Order the results. Here is the link to the <a href="https://docs.angularjs.org/guide/filter">documentation</a>.</p>
+
+<h4 id="supporting-links">Supporting Links</h4>
+
+<p>So I guess this is enough for a start. There is much to learn, but perhaps that would be covered in another article. I present to you a few useful links:</p>
+
+<ul>
+  <li><a href="https://www.coursera.org/learn/angular-js/home/welcome">Coursera Course on AngularJS</a></li>
+  <li><a href="https://angularjs.org/">Angular JS Website</a></li>
+  <li><a href="http://www.w3schools.com/angular/">W3Schools Tutorial on Angular</a></li>
+</ul>
+:ET

@@ -1,0 +1,114 @@
+I"^1<h1 id="web-development-lecture-series-introduction">Web Development Lecture Series: Introduction</h1>
+
+<h2 id="basics-of-what-the-browser-does">Basics of what the browser does</h2>
+<p>Here we briefly describe the back-breaking work the browser does, every time you open your favorite websites.</p>
+
+<p>The internet does not understand <code class="language-plaintext highlighter-rouge">facebook.com</code>. Yet, everything on the internet has an address. How does this work?</p>
+
+<p>There is a protocol called <code class="language-plaintext highlighter-rouge">IP</code>, which provides a numeric address to every computer on the internet. So when you open <code class="language-plaintext highlighter-rouge">pclub.in</code>, your computer somehow figures out where the files for the website are stored. Here, we mean that your computer has to find out how to locate the machine storing the files for <code class="language-plaintext highlighter-rouge">pclub.in</code>. Here is what happens:</p>
+
+<ul>
+  <li>Your browser talks to a machine called <strong>DNS Server</strong>, which converts <code class="language-plaintext highlighter-rouge">pclub.in</code> to an IP address. In this case, it is <code class="language-plaintext highlighter-rouge">192.30.252.153</code>.</li>
+  <li>This IP address is where the files are to be found. So now your computer tells the internet to provide the files placed at that location.</li>
+  <li>The machine pointed to by the IP address above (the computer which stores the files of the website) is called the <strong>server</strong>.</li>
+  <li>The first file to be loaded is an <code class="language-plaintext highlighter-rouge">HTML</code> web page. This is something which describes the structure of the page, what it contains, and what all other images etc need to be fetched.</li>
+  <li>The browser reads the <code class="language-plaintext highlighter-rouge">HTML</code> file, and figures out the extra files it will need to fetch for that.</li>
+  <li>It fetches some <code class="language-plaintext highlighter-rouge">CSS</code> files (for styling), some <code class="language-plaintext highlighter-rouge">JS</code> files (for interactive behavior), and images.</li>
+  <li>The above files need not all be on <code class="language-plaintext highlighter-rouge">pclub.in</code>. I could link to some image lying at some other website’s location, and the browser would repeat the same procedure as above for that file, finding that website’s location and then getting the image.</li>
+</ul>
+
+<h2 id="exploring-the-files-being-received">Exploring the files being received</h2>
+<p>Here’s a simple exercise. Open a new tab in your browser, and press F12. You will see a (scary looking?) panel pop up, to your right or at the bottom. Don’t lose heart, it isn’t all that scary :) It is called <em>Developer Tools</em>, or related terms, depending on the context.</p>
+
+<p>Now you need to click on the tab named <code class="language-plaintext highlighter-rouge">Network</code> in that panel. Once you’ve done that, open up <code class="language-plaintext highlighter-rouge">pclub.in</code>.</p>
+
+<p>It would probably look somewhat like in the images below.</p>
+
+<p>For <strong>Chrome</strong>:
+<img src="/assets/image/article/chrome-network.png" alt="" /></p>
+
+<p>For <strong>Firefox</strong>:
+<img src="/assets/image/article/firefox-network.png" alt="" /></p>
+
+<p>I’ll be referring to the <strong>Google Chrome</strong> image.</p>
+
+<ul>
+  <li>Note the first entry in the list. It says <code class="language-plaintext highlighter-rouge">pclub.in</code>. That means that you made a request for <code class="language-plaintext highlighter-rouge">pclub.in</code>. You can even see when it finished in the bars on the right.</li>
+  <li>Some <code class="language-plaintext highlighter-rouge">css</code> files follow that request. They are necessary for making the page look good, and provide all the styling information.</li>
+  <li>A little down, there is an entry called <code class="language-plaintext highlighter-rouge">pclub.png</code>. That was a request made for the main PClub image, and as you can see, it made it to your screen.</li>
+</ul>
+
+<p>There are plenty more files, which we don’t need to know about so soon. We urge you to give this a shot, try this yourself, and explore (Google) more on this.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>We’ll hope that you have some knowledge of programming, and are comfortable with using a computer.</p>
+
+<p>In addition, it will be highly preferred if you are using a Linux/Mac machine. Windows imposes restrictions on things you can do, gives you no way of doing things it has no softwares for, and is not Open Source (which, Mac is not too). Nonetheless, we hope that you install SSH and SCP clients on your windows machines, so that you can copy your files to the IIT Kanpur servers and get your homepage ready. Linux users don’t need any special software in most cases (ensure that <code class="language-plaintext highlighter-rouge">ssh</code> command is working in your terminal).</p>
+
+<p>Some softwares you should have installed for Windows (<strong>before</strong> the lecture) are:</p>
+<ul>
+  <li><a href="https://winscp.net/eng/index.php">WinSCP</a></li>
+  <li><a href="http://www.putty.org/">PuTTY</a></li>
+  <li><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PSCP</a></li>
+</ul>
+
+<p>Also, to be able to benefit from the lecture, you are strongly recommended to get your IITK Homepage directory made <strong>BEFORE</strong> the lecture. If time permits, we will cover some of that too.</p>
+
+<p>Here are the <strong>Official</strong> instructions on how to make your homepage:
+<a href="http://www.iitk.ac.in/cc/homepage/">Creating Personal Homepage</a>. You need to look at the section saying <em>For uploading and downloading and editing (using WinSCP)</em>.</p>
+
+<h2 id="topics-to-be-covered">Topics to be covered</h2>
+<p>Here’s a brief description of what this series will attempt to cover, and what those topics are.</p>
+
+<h3 id="html">HTML</h3>
+<p>Say you need to design a poster, how would you go about doing that?</p>
+
+<p>You begin with a vague idea. Perhaps you want a title, followed by a subtitle. A title image would be good too. Some text in paragraphs, and some more images.</p>
+
+<p>Note that the things which immediately come to mind describe the structure of the poster. You could later on choose to write things in a pretty font, display images to the right; or even choose to make the font size in the paragraphs larger than the title itself. This all is secondary. What you initially need to know is, what is the structure of the document.</p>
+
+<p>On the web, that is precisely what HTML does. HTML, (or Hyper Text Markup Language) is a templating language, meaning that it let’s you create a template of what structure you have in mind. Displaying it nicely is a whole other matter, which we will look at later.</p>
+
+<p>Here are some of the things which are preferably done in HTML, for a web page:</p>
+
+<ul>
+  <li>Title of the page (the one which is displayed as the name of the current tab)</li>
+  <li>Information about the web page for browsers</li>
+  <li>The <em>body</em> of the webpage, which you see.</li>
+  <li>Images in the web page</li>
+  <li>Text in the web page</li>
+  <li>Subdividing text into paragraphs</li>
+  <li>Adding whitespace (newlines, spaces etc)</li>
+  <li>Some simple styling of webpages (not recommended)</li>
+  <li>Add links to other pages</li>
+  <li>Quite more :)</li>
+</ul>
+
+<h3 id="css">CSS</h3>
+<p>Now suppose you need to show something in a colored font on your webpage, or you want an image to display on the right side of the webpage instead of the left.</p>
+
+<p>How do you do that? Thanks to the structured form of HTML, it is possible to label and identify items in your website’s structure (maybe you need to refer to all images, maybe only the images inside a particular paragraph, who knows?). Using this, you can define rules for every particular set of items on your web page.</p>
+
+<p>HTML and CSS alone form the majority of the visible part of the websites you see. The design of the <code class="language-plaintext highlighter-rouge">pclub.in</code> website, how <code class="language-plaintext highlighter-rouge">google.com</code> looks, Google’s new material design websites; most of the styling is still done in CSS (apart from some complicated, dynamic ones). CSS is what you use to design your websites, make them look pretty (or ugly if you want to), and even add some animations!</p>
+
+<p>For an example, try navigating to <a href="http://pclub.in/contact.html">the ‘contact’ page on pclub.in</a>. Try hovering your mouse above any of the images, or names of the secretaries. The smooth animation you see was implemented with a few standard lines of CSS :)</p>
+
+<h3 id="javascript">JavaScript</h3>
+<p>You’ve got an idea about how to describe the structure of a document, you even know how to put some style to it. But how do you handle clicks?</p>
+
+<p>One simple thing is to put links. That could open up a new page. But what if you want the click to, say, change some text on the page? Or maybe you’re making an online game, and you want it to use some buttons. Think YouTube, and how it handles the Play button. How do you describe what should happen when you click something?</p>
+
+<p>Also, you’ve seen some simple animations. Did you notice the animation for <em>We’re the PClub</em> on the programming club website homepage? The alphabets appear one by one, after a certain time delay. How do you do that?</p>
+
+<p>What about Facebook, how does it get more information when you scroll down, and display it on the same page?</p>
+
+<p>What we’ve described above are actual programming challenges, not just styling and structuring problems. JavaScript is the de-facto language of the internet, and it is what helps us describe all the above actions in a way computers understand. JavaScript is in itself, a full fledged programming language, and you can do quite a bit using it. It is what makes websites responsive. These files have an extension of <code class="language-plaintext highlighter-rouge">.js</code>.</p>
+
+<h3 id="nodejs-and-other-backend-languages-like-php">Node.js (and other Backend languages like PHP)</h3>
+<p>All you’ve seen till now is what is called the <em>frontend</em>. Everything was happening on the browser (which is called the <em>client side</em>). The machine hosting the website (as we mentioned in the very start) only has to send the <code class="language-plaintext highlighter-rouge">html</code>, <code class="language-plaintext highlighter-rouge">css</code>, <code class="language-plaintext highlighter-rouge">js</code> files to the browser, which interprets these files. Websites comprising only of that type of items are called static websites. Think of, <a href="http://example.com">example.com</a>, or <a href="http://cse.iitk.ac.in/index.html">cse.iitk.ac.in</a>. These websites have content which changes rarely, and is manually updated by updating the files stored on the host computer (called the <strong>server</strong>).</p>
+
+<p>How about Facebook? People post thousands of images every minute, yet it does not create a separate <code class="language-plaintext highlighter-rouge">html</code> page for everyone every 1 second. In such cases, the server is not only sending static content (<code class="language-plaintext highlighter-rouge">html</code>, <code class="language-plaintext highlighter-rouge">css</code>, <code class="language-plaintext highlighter-rouge">js</code>), but is also responding to complex queries. When you log in, you send an <em>HTTP request</em> (google this term!) to the server, with your password. It then verifies that it is correct, and lets you in. On this, it looks up in its store of information (called the <em>Database</em>), and generates data to display to you. This is how you get this information. The user’s browser sends more <em>HTTP Requests</em> to the server, say asking for new items in your news feed. The server responds by providing that information, and the browser takes that information, and JavaScript converts that information into content you can see on your screen.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>The above is a (fairly-long) description of the various things necessary to be known to be able to do some serious web development. Don’t worry if you don’t understand parts of it, you’ll come to know eventually, when you cover the topics in more detail. Till then, happy Googling!</p>
+:ET

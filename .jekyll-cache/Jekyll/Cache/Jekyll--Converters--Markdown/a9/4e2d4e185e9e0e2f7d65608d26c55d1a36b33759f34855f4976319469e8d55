@@ -1,0 +1,56 @@
+I"w
+<p>We’ll be describing the procedure of contibuting posts to the Programming Club website here.</p>
+
+<p>The website is based on <a href="https://jekyllrb.com/">Jekyll</a>, and we use Markdown format for writing posts.
+Here are some steps you should go through to contribute a post:</p>
+
+<ul>
+  <li>
+    <p>Have a look at previous posts here at <a href="https://github.com/pclubiitk/pclub.in/tree/master/_posts">our Github repository</a>.</p>
+  </li>
+  <li>
+    <p>Have a look at the following template for each post:</p>
+  </li>
+</ul>
+
+<figure class="highlight">
+  <pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;some</span><span class="nv"> </span><span class="s">cool</span><span class="nv"> </span><span class="s">title&gt;"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2016-05-05 17:23:20 +200</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">&lt;your-name&gt;</span>
+<span class="na">website</span><span class="pi">:</span> <span class="s">&lt;website-if-any&gt;</span>
+<span class="na">category</span><span class="pi">:</span>
+<span class="na">tags</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">some tag</span>
+<span class="pi">-</span> <span class="s">another tag</span>
+<span class="na">categories</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">a category</span>
+
+<span class="na">image</span><span class="pi">:</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">&lt;link to a title image&gt;</span>
+<span class="nn">---</span>
+
+Your article's content goes here in markdown syntax</code></pre>
+</figure>
+
+<p>Follow this template to the bit.</p>
+
+<ul>
+  <li>
+    <p>Ensure that you are familiar with basic markdown syntax. It’s really easy!</p>
+  </li>
+  <li>
+    <p>Check that you have included credits, if any part belongs to someone else.</p>
+  </li>
+  <li>
+    <p>Done already? Mail or message the markdown file to any of the coordinators, or at pclubiitk@gmail.com. If you’re familiar with Git, you can also send us a Pull Request on our Github repository listed in the below point.</p>
+  </li>
+  <li>
+    <p><a href="/contact.html">Contact Us</a> if there are any issues.</p>
+  </li>
+  <li>
+    <p>And of course, we’re open source. Find the source code at <a href="https://github.com/pclubiitk/pclub.in">Github here</a>, and feel free to open new issues, pull requests etc.</p>
+  </li>
+</ul>
+:ET

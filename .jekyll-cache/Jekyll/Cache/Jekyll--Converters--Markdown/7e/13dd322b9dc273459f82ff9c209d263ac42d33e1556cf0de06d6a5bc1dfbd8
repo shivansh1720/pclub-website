@@ -1,0 +1,85 @@
+I"2<h1 id="managing-processes-in-linux">Managing Processes in Linux</h1>
+
+<h3 id="the-ps-command">The <code class="language-plaintext highlighter-rouge">ps</code> command</h3>
+<p>Short for <strong><em>process status</em></strong> . Returns all <em>currently running processes</em> running on the system.</p>
+
+<p>When called without arguments, information return can be a little useless.</p>
+
+<p>To get a more clear picture we use <code class="language-plaintext highlighter-rouge">ps -aux</code> .</p>
+
+<p>This tells <code class="language-plaintext highlighter-rouge">ps</code>  to return list of process from <strong>all users</strong>
+We can also use <code class="language-plaintext highlighter-rouge">ps -ef</code> to view <strong>all running process</strong>
+where <code class="language-plaintext highlighter-rouge">-e</code>is used to <strong>display all processes</strong> and <code class="language-plaintext highlighter-rouge">-f</code> is used to <strong>display in full format listing</strong></p>
+
+<p>To view all running processes that belongs to a particular user, we use <code class="language-plaintext highlighter-rouge">ps -f -u username1,username2</code></p>
+
+<p><strong>Note</strong>: We can see processes limited to a set of users by seperating the usernames by a comma()
+Often <code class="language-plaintext highlighter-rouge">ps aux | grep commandname</code> is used to get details of process with the given command</p>
+
+<p>To see all proccesses in a tree structure we use <code class="language-plaintext highlighter-rouge">ps axjf</code>
+Using this we get to know the parent processes (by getting an hierarchical structure)</p>
+
+<h3 id="pids">PIDs</h3>
+
+<p>Each process is assigned a <em>unique</em> <strong>Process ID (PID)</strong></p>
+
+<p>Each process also has a <strong>Parent Process ID (PPID)</strong></p>
+
+<p>To filter your searches with a specific <strong>PID</strong> use <code class="language-plaintext highlighter-rouge">ps -f -p PIDofProcess</code></p>
+
+<p>Similarly to filter by PPID use <code class="language-plaintext highlighter-rouge">ps -f --ppid PPIDofProcess</code>
+Also you may get pid by <code class="language-plaintext highlighter-rouge">pidof commandname</code></p>
+
+<h3 id="killing-the-process">Killing the process</h3>
+
+<h4 id="the-kill-command">The kill command</h4>
+
+<p>It is used to send a signal to a process or to kill a process</p>
+
+<p>Basic Synatx is <code class="language-plaintext highlighter-rouge">kill -SIGNAL PID</code></p>
+
+<p><strong>Signals of our interest</strong> : SIGTERM &amp; SIGKILL</p>
+
+<h4 id="sigterm">SIGTERM</h4>
+
+<p><code class="language-plaintext highlighter-rouge">kill PID</code> will send a SIGTERM signal by default. The application can determine what to do once it receives a SIGTERM signal</p>
+
+<p>It may stop the process immediately, may stop after a delay after cleaning resources or might run endlessly</p>
+
+<p><code class="language-plaintext highlighter-rouge">kill -SIGTERM PID</code> and <code class="language-plaintext highlighter-rouge">kill -15 PID</code> are same</p>
+
+<h4 id="sigkill-the-super-power">SIGKILL (The Super Power)</h4>
+
+<p>Kind of Force Kill</p>
+
+<p>Unlike SIGTERM , SIGKILL cannot be ignored by the process , even the process is not aware when SIGKILL signal is sent.</p>
+
+<p>While there are rare cases where an external influence (like waiting I/O) may be the reason of ignoring SIGKILL. But it works in most cases !
+<code class="language-plaintext highlighter-rouge">kill -SIGKILL PID</code> and <code class="language-plaintext highlighter-rouge">kill -9 PID</code> is same</p>
+
+<p>Suppose your firefox is not responding and you decided to kill the process : <code class="language-plaintext highlighter-rouge">kill -9 `pidof firefox`</code></p>
+
+<h4 id="the-killall-command">The killall command</h4>
+
+<p>Too lazy to find the PID of a process ? Here have a look at the killall command</p>
+
+<p><strong>Example (killing firefox)</strong> : <code class="language-plaintext highlighter-rouge">killall -9 firefox</code></p>
+
+<p><strong>pkill command</strong>
+Almost the same as <code class="language-plaintext highlighter-rouge">kilall</code> command. The only difference being you don’t have to provide the exact process name, partial process name will do.</p>
+
+<p><strong>Beware you might also kill other process which you didn’t intend to kill</strong>
+<em>Example (killing firefox)</em> : <code class="language-plaintext highlighter-rouge">pkill firef</code> will also do ! :D</p>
+
+<h4 id="the-xkill-command">The xkill command</h4>
+
+<p>If you are new to using <strong>LINUX</strong> or hate the bash, you may do it the GUI way :P</p>
+
+<p>Simply  type <code class="language-plaintext highlighter-rouge">xkill</code> in the terminal and it will ask you to select a window whose client you wish to kill.</p>
+
+<p>Fast if you have a GUI :P</p>
+
+<p><em>Have fun killing !!</em></p>
+
+<p><strong>Fin</strong></p>
+:ET

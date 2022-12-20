@@ -1,0 +1,62 @@
+I":<h2 id="ubuntu-installation-guide">Ubuntu installation guide</h2>
+
+<ul>
+  <li>
+    <p>Insert the bootable USB stick, reboot the system and instruct the <strong>BIOS</strong> to boot from the USB by pressing a special function key (usually <strong>F1</strong>, <strong>F2</strong> <strong>F9</strong>, <strong>F10</strong>, <strong>F12</strong> or maybe <strong>del</strong> depending on your device) after the boot up a new grub screen should appear on the screen. From the menu select <strong>Install Ubuntu</strong> and press <strong>Enter</strong>.</p>
+  </li>
+  <li>After this a completely functional Ubuntu system running in live-mode will start up. On the launcher on left side hit on the second icon from top, <strong>Install Ubuntu 16.04 LTS</strong>, and the installer utility will start. Choose language and hit <strong>Continue</strong>.</li>
+  <li>In <strong>Preparing to install ubuntu</strong> click <strong>Continue</strong>.</li>
+</ul>
+
+<p><img src="https://s24.postimg.org/fc1lev4tx/1.png" alt="" /></p>
+
+<ul>
+  <li>In <strong>Installation type</strong> check the <strong>Something else</strong> option and hit on <strong>Continue</strong> button to proceed furthur.</li>
+</ul>
+
+<p><img src="https://s24.postimg.org/qcwqjvx2t/2.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Now we create three partitions one for <strong><em>root</em></strong>, one for <strong><em>swap</em></strong> and other for <strong><em>home</em></strong>. To create the swap partition and the <strong><em>root</em></strong> partition select the free space (the shrink space from windows created earlier) and hit on the <strong>+</strong> icon below one by one. Swap partition is for when RAM gets depleted so if you have RAM greater than 8 GB, feel free to leave making the swap partition. On partition settings use the following configurations and hit <strong>OK</strong> to continue:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   Size = 4096 MB
+   Location for the new partition = Beginning
+   Mount = swap area
+
+   Size = at least 20000 MB
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="https://s24.postimg.org/oz53okxth/3.png" alt="" /></p>
+
+<p><img src="https://s24.postimg.org/h7odq0to5/4.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Create the <strong><em>home</em></strong> partition using the same steps as above. Use all the available free space left for home partition size. The partition settings should look like this:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   Size = all remaining free space
+   Type for the new partition = Primary
+   Location for the new partition = Beginning
+   Use as = EXT4 journaling file system
+   Mount point = /home
+</code></pre></div>    </div>
+
+    <p><img src="https://s24.postimg.org/69d47u52t/5.png" alt="" /></p>
+  </li>
+  <li>Hit the <strong>Install Now</strong> button to apply changes and start the installation process. Again a pop-up window will appear, hit <strong>Continue</strong> to write changes to disc and the installation process will now begin.</li>
+  <li>Next select a nearby city and hit <strong>Continue</strong>.</li>
+  <li>Next select <strong>keyboard layout</strong> and hit <strong>Continue</strong>.</li>
+  <li>
+    <p>Fill up the <strong>Who are you?</strong> window and hit <strong>Continue</strong>. From here installation process will run automatically till it reaches the end.
+ <img src="https://s24.postimg.org/fv6oo4w8l/6.png" alt="" /></p>
+  </li>
+  <li>After installation restart the system and choose <strong>Ubuntu 16.04</strong> from the <strong>Grub</strong> menu and now you can enjoy the vivid features of <strong>Ubuntu</strong>.</li>
+</ul>
+:ET

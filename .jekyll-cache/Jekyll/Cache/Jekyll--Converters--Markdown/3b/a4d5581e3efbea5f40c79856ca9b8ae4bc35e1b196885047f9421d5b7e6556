@@ -1,0 +1,258 @@
+I"�1<h1 id="introduction">Introduction</h1>
+
+<p>Hi all, welcome to the Programming Club Introductory Workshop 2017!</p>
+
+<h2 id="slack">Slack</h2>
+<p>First of all, please join our slack at <a href="https://pclubiitk.slack.com">https://pclubiitk.slack.com</a>
+and join the channel <code class="language-plaintext highlighter-rouge">#y17</code> to receive future emails regarding events and other stuff
+from slack announcements directly.</p>
+
+<h2 id="terminal">Terminal</h2>
+<p>Try opening Terminal (sometimes known as Command Line) from the top-left menus. You should find it in the ‘System’ applications.</p>
+
+<p>Mind it, some operating systems like Ubuntu might have a shortcut for this, you can open it using <code class="language-plaintext highlighter-rouge">Ctrl+Alt+T</code>, but <em>not</em> in the CC machines.</p>
+
+<p>This is where you should learn to do all stuff related to programming, since this gives you <em>unfathomable</em> power.</p>
+
+<h2 id="directory-structure">Directory structure</h2>
+<p>Linux organizes files and folders in the following way:</p>
+
+<ul>
+  <li>Files are kept inside folders</li>
+  <li>You can enter and exit folders just like in Windows</li>
+  <li>Folders are named in the following way: <code class="language-plaintext highlighter-rouge">/path-to-folder/folder-name</code>. This is what completely describes a folder (or a file).</li>
+  <li>We will be using the word <code class="language-plaintext highlighter-rouge">directory</code> for folders. Please note this.</li>
+</ul>
+
+<p>To play around with this, try to use the following commands:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ls
+
+# Lists contents of current folder
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd Desktop
+
+# Move to the folder named Desktop
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+
+# Go Back to previous folder
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~
+
+# Go back to home folder(where you start on opening a terminal)
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Command</td>
+      <td>Full form</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>ls</td>
+      <td>list screen</td>
+      <td>List all the files and folders in current directory</td>
+    </tr>
+    <tr>
+      <td>cd</td>
+      <td>change directory</td>
+      <td>Enter a folder whose path is known</td>
+    </tr>
+    <tr>
+      <td>pwd</td>
+      <td>present working directory</td>
+      <td>Full name of the current folder you are in</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>tilde</td>
+      <td>Short form for your home folder</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl+c</code>(keyboard)</td>
+      <td> </td>
+      <td>Exit/Cancel the current command</td>
+    </tr>
+    <tr>
+      <td>exit</td>
+      <td>Exit</td>
+      <td>Exit the terminal</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="gedit">Gedit</h2>
+<p>We will be using <code class="language-plaintext highlighter-rouge">gedit</code> to write your programs. Find it from the applications menu and open it. Don’t be scared, it’s very much like <code class="language-plaintext highlighter-rouge">notepad</code> from Windows.</p>
+
+<h1 id="python">Python</h1>
+
+<p>Here are a few python expressions:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">a = 2+2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">print "hello world!"</code></li>
+  <li><code class="language-plaintext highlighter-rouge">print a</code></li>
+  <li><code class="language-plaintext highlighter-rouge">print a*2</code></li>
+</ul>
+
+<p>Try typing all the above lines in gedit and then saving the file as
+<code class="language-plaintext highlighter-rouge">test.py</code>.</p>
+
+<p>Now after saving the file, you will need to navigate to its location
+from the terminal. Once you are in the folder containing <code class="language-plaintext highlighter-rouge">test.py</code> such
+that <code class="language-plaintext highlighter-rouge">ls</code> shows <code class="language-plaintext highlighter-rouge">test.py</code> as one of the files, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python test.py
+</code></pre></div></div>
+
+<p>The output would be something like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hello world!
+4
+8
+</code></pre></div></div>
+
+<p>You used an <em>operator</em> in <code class="language-plaintext highlighter-rouge">a*2</code> - the multiplication operator. Other operators you need to try out are:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>Addition</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Subtraction</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>To the power of</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="ifelse">If/Else</h2>
+
+<p>Now that you know how to write simple things, let’s proceed to something interesting.</p>
+
+<p>Python reads spaces and tabs in your program as well. So for writing a complicated
+instruction for the computer, we will need to use multiple lines.
+We will <code class="language-plaintext highlighter-rouge">indent</code> the lines in such a way that the computer can understand that
+they are meant to be read together.</p>
+
+<p>Try the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"a is not zero"</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"a is zero"</span>
+</code></pre></div></div>
+
+<p>That’s it! See?</p>
+
+<p>Sometimes one condition isn’t enough though. In that case, you are allowed to chain up multiple conditions using <code class="language-plaintext highlighter-rouge">and</code> and <code class="language-plaintext highlighter-rouge">or</code> like so:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">a</span> <span class="ow">is</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">is</span> <span class="n">a</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"Condition successful"</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"condition failed"</span>
+</code></pre></div></div>
+
+<p>That’s all good, but what if you want multiple checks on a variable? For example, let’s say you want to do Action 1 if <code class="language-plaintext highlighter-rouge">a&lt;10</code> and Action 2 if <code class="language-plaintext highlighter-rouge">a=10</code> and Action 3 when <code class="language-plaintext highlighter-rouge">a&gt;10</code>, what then? This is where <code class="language-plaintext highlighter-rouge">if-elif-elif-elif-...-else</code> construct comes into the picture. Use it like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is less than 0"</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is between 0 and 4"</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is between 4 and 10"</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"a is bigger than 10"</span>
+</code></pre></div></div>
+
+<h2 id="loops">Loops</h2>
+
+<p>Now for some loopy-loops!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<h2 id="reading-input">Reading input</h2>
+<p>You can read input from the user using something like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">()</span>
+<span class="k">print</span> <span class="s">"Hello mr. "</span> <span class="o">+</span> <span class="n">a</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">())</span>
+<span class="k">print</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">5</span>
+</code></pre></div></div>
+
+<p>See what happens there?</p>
+
+<h1 id="codechef">CodeChef!</h1>
+<p>Try this link <a href="https://www.codechef.com/problems/TEST">here</a></p>
+
+<p>Can you solve this problem? Try writing a program for this! Please give it a try before you scroll down.</p>
+
+<p>It’s quite small! Here’s the solution!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">42</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">print</span> <span class="n">x</span>
+</code></pre></div></div>
+
+<p>So you should now <strong>certainly</strong> create an account on CodeChef! Try submitting the solution there (don’t forget to select Python when you submit). Happy coding!</p>
+
+<h1 id="python-interpreter">Python Interpreter</h1>
+
+<p>Try running <code class="language-plaintext highlighter-rouge">python</code> command in the terminal. You should see something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Python 2.7.10 (default, Aug 12 2017, 22:05:31)
+[GCC 4.9.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; 
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">&gt;&gt;&gt;</code> is the place where you type. Try typing the some of the
+commands up like:</p>
+
+<ul>
+  <li>2+2</li>
+  <li>print “hello world!”</li>
+</ul>
+
+<h1 id="follow-up">Follow up</h1>
+
+<p>Congrats on finishing up to here! If you’re now pumped up for trying out some more challenges, try your hand at the following problems:</p>
+
+<ul>
+  <li><a href="https://www.codechef.com/problems/HS08TEST">ATM</a></li>
+  <li><a href="https://www.codechef.com/problems/FCTRL">Factorial</a></li>
+  <li><a href="https://www.codechef.com/problems/INTEST">Enormous Input Test</a></li>
+  <li><a href="https://www.codechef.com/problems/TLG">The Lead Game</a></li>
+</ul>
+
+<p><em>Note</em> C/C++/Java are commonly the preferred languages while participating in competitive contests. Recently, ACM ICPC has started allowing Python as well.</p>
+:ET

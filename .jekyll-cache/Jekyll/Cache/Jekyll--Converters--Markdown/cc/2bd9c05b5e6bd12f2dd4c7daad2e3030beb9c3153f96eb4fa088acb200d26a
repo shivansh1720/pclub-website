@@ -1,0 +1,20 @@
+I"Í<p>You have a tree <em>T</em> (an undirected connected graph containing no cycles) of <em>N</em> nodes rooted at node number <em>1</em>. Each node is painted either <strong>White</strong> or <strong>Black</strong> . You intend to gift this tree to your girlfriend . However , your girlfriend is rather stubborn and will accept it only if it matches the color scheme the one that she has chosen .</p>
+
+<p>Being the responsible person that you are, you set on re-coloring your tree T. You can do 2 operations on the tree:<br />
+<strong>1.</strong> Paint the i<sup>th</sup> node in the color of your choice,i.e,either black or white.<br />
+<strong>2.</strong> Invert the colors of all the nodes in the subtree rooted at i , i.e, for all the nodes in iâ€™s subtree (including i) , change the nodes colored white to black and change the nodes colored black to white.</p>
+
+<p>You want to please your girlfriend and also want to do the least possible work. Output the minimum number of operations that you have to perform to change the color scheme of your tree to the one that your girlfriend wants.</p>
+
+<p><strong>Constraints</strong><br />
+1&lt;=N&lt;=100000</p>
+
+<p><strong>Input</strong><br />
+The first line contains a single integer N denoting the number of nodes in the tree.<br />
+The next N-1 lines contain 2 integers u , v  on each line denoting that there is an edge between u and v.<br />
+The next line contains N integers,each integer is either 0 or 1. The i<sup>th</sup> integer denotes the color of the i<sup>th</sup> node. 0 denotes white and 1 denotes black.<br />
+The next line contains N integers , each integer is either 0 or 1. The i<sup>th</sup> integer denotes the color your girlfriend wants the i<sup>th</sup> node to be painted . As above 0 denotes white and 1 denotes black.</p>
+
+<p><strong>Output</strong><br />
+Output a single integer:the minimum number of operations needed to performed by you to change the color scheme of your tree to the one your girlfriend wants.</p>
+:ET
