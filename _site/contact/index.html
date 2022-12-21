@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contact Me</title>
+  <title>Contact Us</title>
   <meta name='description' content='The Programming Club, IIT Kanpur'>
 
   <link rel="canonical" href="/contact/">
@@ -74,7 +74,7 @@
     
       
       <li class="nav__item">
-        <a href="/contact/" class="nav__link">Contact Me</a>
+        <a href="/contact/" class="nav__link">Contact Us</a>
       </li>
       
     
@@ -335,7 +335,7 @@
     
       
       <li class="nav__item">
-        <a href="/contact/" class="nav__link">Contact Me</a>
+        <a href="/contact/" class="nav__link">Contact Us</a>
       </li>
       
     
@@ -615,13 +615,10 @@
   <main class="content" aria-label="Content">
     <!-- begin hero -->
 
-<section class="hero">
-  <div class="hero__inner">
-    <div class="hero__image">
-      <img src="/images/bg.jpg" alt="Contact Me">
-    </div>
-    <div class="hero__content">
-      <h1 class="hero__title">Contact Me</h1>
+<section class="hero-without-image">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="hero__title">Contact Us</h1>
     </div>
   </div>
 </section>
@@ -632,31 +629,1126 @@
 <div class="container">
   <article class="page animate">
     <div class="page__content">
-      <div class="form-container">
-  
-  <p class="contact-description">Norlin comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.</p>
-  
-  <form class="form"
-    action="https://formspree.io/pclubiitk@gmail.com" method="POST">
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
-    </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
-    </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message" required></textarea>
-    </div>
-    <div class="form__group">
-      <button class="button button--primary" type="submit">Send Message</button>
-    </div>
-    <input type="hidden" name="_next" value="/contact/thanks/" />
-  </form>
-  <hr>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+  /* Coding With Nick */
+
+/* GEneral stuff */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+body{
+    font-family: 'lato', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+a{
+    color: #ffffff;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover,
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #bdb7b7;
+    font-weight: 300;
+}
+h2{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #bdb7b7;
+    font-weight: 700;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #858383;
+    margin: 0 0 5px;
+    position: relative;
+}
+.section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 32%;
+    background: linear-gradient(90deg, #e7553c, #3b1510 100%);
+    bottom: -5px;
+
+}
+.container .section-title h1::before{
+    left: 30%;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -50% ;
+    margin-left: -50% ;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.team{
+    margin-bottom:30px ;
+}
+.team .team-img{
+    position: relative;
+    font-size: 0;
+    text-align: center;
+}
+.team .team-img img{
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    border: 20px solid #26293a;
+}
+
+.team .team-content{
+    padding: 80px 20px 20px 20px;
+    margin-top: -80px;
+    text-align: center;
+    background: #26293a;
+    border-radius: 10px;
+}
+.team .team-content h2{
+font-size: 25px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+.team .team-content h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.team .team-content h4{
+    font-size: 16px;
+font-weight: 300;
+letter-spacing: 1px;
+font-style: italic;
+margin-bottom: 0;
+}
+.team .team-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.team .team-social{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(82, 45, 45, 0.6);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.team:hover .team-social{
+    opacity: 1;
+}
+.team .team-social a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right:5px ;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+.team .team-social a.social-tw{
+    background: #00acee;
+}
+.team .team-social a.social-fb{
+    background: #3b5998;
+}
+.team .team-social a.social-li{
+    background: #0e76a8;
+}
+.team .team-social a.social-in{
+    background: #3f729b;
+}
+.team .team-social a.social-ml{
+    background: #c4302b;
+}
+.team .team-social a:last-child{
+    margin-right: 0;
+}
+.team:hover .team-social a{
+    margin-top: 0;
+}
+.team .team-social a:hover{
+    background: #222222;
+}
+
+
+/* Mobile Responsive */
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    .column{
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .column{
+        max-width: 33.333333%;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    .column{
+        max-width: 25%;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+   
+}
+
+.secyTable {
+     width: 100%;
+ }
+
+.secyTable tr {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.secyTable tr:hover {
+  background-color: #26293a;
+  -webkit-transform:scale(1.05);
+  -moz-transform:scale(1.05);
+  -ms-transform:scale(1.05);
+  -o-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+.secyRow {
+  display:table-cell;
+}
+.secyRow b {
+  color: #33dddd;
+}
+.secyTable tr:nth-child(even) {
+  background-color: #2F4F4F;
+}
+
+.social-media-logo {
+  margin-bottom: 10px !important;
+}
+</style>
+
+
+
+<div class="container">
+  <div class="section-title">
+      <h1>Current Coordinators</h1>
+  </div>
+
+      <div class="row1">
+
+        
+        <div class="column">
+            <div class="team">
+                <div class="team-img">
+                    <img src="/images/hetp.jpg" alt="Team Image">
+                </div>
+                <div class="team-content">
+                    <h2>Het Patel</h2>
+                    <h3>9825688226</h3>
+                    <h4>hetpatel20@iitk.ac.in</h4>
+                </div>
+                <div class="team-social">
+                    <a href="https://github.com/wiredinhp" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                    <a href="https://facebook.com/wiredinhp" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                    <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                    <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                    <a href="mailto:hetpatel20@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="column">
+            <div class="team">
+                <div class="team-img">
+                    <img src="/images/parinay.jpg" alt="Team Image">
+                </div>
+                <div class="team-content">
+                    <h2>Parinay Chauhan</h2>
+                    <h3>9264933530</h3>
+                    <h4>parinayc20@iitk.ac.in</h4>
+                </div>
+                <div class="team-social">
+                    <a href="https://github.com/parinayc20" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                    <a href="https://facebook.com/parinay.chauhan.1" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                    <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                    <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                    <a href="mailto:parinayc20@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="column">
+            <div class="team">
+                <div class="team-img">
+                    <img src="/images/prem.jpg" alt="Team Image">
+                </div>
+                <div class="team-content">
+                    <h2>Prem Bharwani</h2>
+                    <h3>7715007558</h3>
+                    <h4>premr20@iitk.ac.in</h4>
+                </div>
+                <div class="team-social">
+                    <a href="https://github.com/PremBharwani" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                    <a href="https://facebook.com/bharwaniprem" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                    <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                    <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                    <a href="mailto:premr20@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="column">
+            <div class="team">
+                <div class="team-img">
+                    <img src="/images/shivam.jpg" alt="Team Image">
+                </div>
+                <div class="team-content">
+                    <h2>Shivam Mishra</h2>
+                    <h3>8604397668</h3>
+                    <h4>mshivam20@iitk.ac.in</h4>
+                </div>
+                <div class="team-social">
+                    <a href="https://github.com/7shivamx" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                    <a href="https://facebook.com/7shivamx" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                    <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                    <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                    <a href="mailto:mshivam20@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+                </div>
+            </div>
+        </div>
+
+        
+
+      </div>
+
 </div>
+
+
+
+<div class="container">
+    <div class="section-title">
+        <h1>Current Secretaries</h1>
+    </div>
+    <table class="secyTable" cellpadding="5">
+      <tr>
+        <th>Name</th>
+        <th>Hall</th>
+        <th>Email-ID</th>
+        <th>Mobile No.</th>
+        <th>GitHub</th>
+        <th>Facebook</th>
+        
+      </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Anwesh Saha</td>
+          <td class="secyRow" align="center"> Hall V</td>
+          <td class="secyRow" align="center"> <a href="mailto:anweshsaha21@iitk.ac.in"> anweshsaha21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 8451962003</td>
+          <td> <a href="https://github.com/Anweshbyte" target="_blank">Anweshbyte </a></td>
+          <td> <a href="https://facebook.com/" target="_blank"></a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Devansh Jain</td>
+          <td class="secyRow" align="center"> Hall III</td>
+          <td class="secyRow" align="center"> <a href="mailto:jdevansh21@iitk.ac.in"> jdevansh21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9464327218</td>
+          <td> <a href="https://github.com/devansh-jain-2002" target="_blank">devansh-jain-2002 </a></td>
+          <td> <a href="https://facebook.com/Devansh-Jain" target="_blank">Devansh-Jain</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Divyansh Mittal</td>
+          <td class="secyRow" align="center"> Hall III</td>
+          <td class="secyRow" align="center"> <a href="mailto:dmittal21@iitk.ac.in"> dmittal21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 8851231264</td>
+          <td> <a href="https://github.com/d-mittal-21" target="_blank">d-mittal-21 </a></td>
+          <td> <a href="https://facebook.com/Divyansh-Mittal" target="_blank">Divyansh-Mittal</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Dhruv Singh</td>
+          <td class="secyRow" align="center"> Hall II</td>
+          <td class="secyRow" align="center"> <a href="mailto:dhruvass21@iitk.ac.in"> dhruvass21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9621688942</td>
+          <td> <a href="https://github.com/dhruv0x0x0" target="_blank">dhruv0x0x0 </a></td>
+          <td> <a href="https://facebook.com/" target="_blank"></a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Geetika</td>
+          <td class="secyRow" align="center"> Hall VI</td>
+          <td class="secyRow" align="center"> <a href="mailto:geetika21@iitk.ac.in"> geetika21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9817323838</td>
+          <td> <a href="https://github.com/geetikag0411" target="_blank">geetikag0411 </a></td>
+          <td> <a href="https://facebook.com/" target="_blank"></a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Kartik Kulkarni</td>
+          <td class="secyRow" align="center"> Hall V</td>
+          <td class="secyRow" align="center"> <a href="mailto:kartik21@iitk.ac.in"> kartik21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9175009924</td>
+          <td> <a href="https://github.com/kartik-iitk" target="_blank">kartik-iitk </a></td>
+          <td> <a href="https://facebook.com/" target="_blank"></a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Mohd Hamza</td>
+          <td class="secyRow" align="center"> Hall III</td>
+          <td class="secyRow" align="center"> <a href="mailto:hamza21@iitk.ac.in"> hamza21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 8795115039</td>
+          <td> <a href="https://github.com/hamza3141" target="_blank">hamza3141 </a></td>
+          <td> <a href="https://facebook.com/" target="_blank"></a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Pratham Sahu</td>
+          <td class="secyRow" align="center"> Hall V</td>
+          <td class="secyRow" align="center"> <a href="mailto:spratham21@iitk.ac.in"> spratham21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 7619678791</td>
+          <td> <a href="https://github.com/Prathamsahu52" target="_blank">Prathamsahu52 </a></td>
+          <td> <a href="https://facebook.com/Pratham-Sahu" target="_blank">Pratham-Sahu</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Rahul Jha</td>
+          <td class="secyRow" align="center"> Hall XII</td>
+          <td class="secyRow" align="center"> <a href="mailto:rahulj21@iitk.ac.in"> rahulj21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 8700367670</td>
+          <td> <a href="https://github.com/juggernautjha" target="_blank">juggernautjha </a></td>
+          <td> <a href="https://facebook.com/juggernautjha" target="_blank">juggernautjha</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Ridin Datta</td>
+          <td class="secyRow" align="center"> Hall III</td>
+          <td class="secyRow" align="center"> <a href="mailto:ridind21@iitk.ac.in"> ridind21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 7439079526</td>
+          <td> <a href="https://github.com/rhydberg" target="_blank">rhydberg </a></td>
+          <td> <a href="https://facebook.com/Ridin-Datta" target="_blank">Ridin-Datta</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Sanat Goel</td>
+          <td class="secyRow" align="center"> Hall II</td>
+          <td class="secyRow" align="center"> <a href="mailto:sanatg21@iitk.ac.in"> sanatg21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9779589799</td>
+          <td> <a href="https://github.com/Sanat-2508" target="_blank">Sanat-2508 </a></td>
+          <td> <a href="https://facebook.com/sanat.goel.16" target="_blank">sanat.goel.16</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Tejas Ahuja</td>
+          <td class="secyRow" align="center"> Hall V</td>
+          <td class="secyRow" align="center"> <a href="mailto:tejasahuja21@iitk.ac.in"> tejasahuja21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 8700794886</td>
+          <td> <a href="https://github.com/ahujatejas06" target="_blank">ahujatejas06 </a></td>
+          <td> <a href="https://facebook.com/tejas-ahuja" target="_blank">tejas-ahuja</a></td>
+       </tr>
+      
+        <tr>
+          <td class="secyRow" align="center"> Vipul Chanchlani</td>
+          <td class="secyRow" align="center"> Hall II</td>
+          <td class="secyRow" align="center"> <a href="mailto:vipulch21@iitk.ac.in"> vipulch21@iitk.ac.in </a> </td>
+          <td class="secyRow" align="center"> 9462150839</td>
+          <td> <a href="https://github.com/vipul124" target="_blank">vipul124 </a></td>
+          <td> <a href="https://facebook.com/vipul.chanchlani" target="_blank">vipul.chanchlani</a></td>
+       </tr>
+      
+    </table>
+</div>
+
+
+
+
+<div class="container">
+  <div class="section-title">
+      <h1>2021 - 22 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/atharv.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Atharv Singh Patlan</h2>
+                  <h3>atharvsp@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>AthaSSiN</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/AthaSSiN" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:atharvsp@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/kartikeya.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Kartikeya Gupta</h2>
+                  <h3>gkartik@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>kartikcode</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/kartikcode" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:gkartik@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/naman.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Naman Gupta</h2>
+                  <h3>namangup@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>namangup</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/namangup" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:namangup@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/som.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Som Tambe</h2>
+                  <h3>somvt@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>SomTambe</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/SomTambe" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:somvt@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+      <h1>2020 - 21 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/deepankur.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Deepankur Kansal</h2>
+                  <h3>deepank@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>DeepankurK</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/DeepankurK" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:deepank@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/nilay.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Nilay Majorwar</h2>
+                  <h3>majorwar@iitk.ac.in</h3>
+                  <p>Software Engineer at Zomato.
+Completed GSOC under GDevelop.
+</p>
+                  <h4>NilayMajorwar</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/NilayMajorwar" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:majorwar@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/nirmal.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Nirmal Suthar</h2>
+                  <h3>nirmalps@iitk.ac.in</h3>
+                  <p>Analyst at AlphaGrep.
+Interned at Microsoft in  summer 2021.
+Completed GSOC under SPDX.
+</p>
+                  <h4>nirmal-suthar</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/nirmal-suthar" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:nirmalps@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/priydarshi.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Priydarshi Singh</h2>
+                  <h3>darshi@iitk.ac.in</h3>
+                  <p>Software Engineer at Optiver.
+Interned at Amazon.
+Completed GSOC under Linux foundation.
+</p>
+                  <h4>dryairship</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/dryairship" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:darshi@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+      <h1>2019 - 20 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/adityagulati.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Aditya Gulati</h2>
+                  <h3>aditg@iitk.ac.in</h3>
+                  <p>Research Fellow at UCSB.
+</p>
+                  <h4>ditttu</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/ditttu" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:aditg@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/anishsaxena.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Anish Saxena</h2>
+                  <h3>anishs@iitk.ac.in</h3>
+                  <p>Doing PhD at Georgia Intitute of Technology.
+Interned at NVIDIA, Intel. 
+</p>
+                  <h4>Anish-Saxena</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/Anish-Saxena" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:anishs@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/kushagragupta.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Kushagra Gupta</h2>
+                  <h3>kushgpt@iitk.ac.in</h3>
+                  <p></p>
+                  <h4>kushagragpt99</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/kushagragpt99" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:kushgpt@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/yugeshkothari.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Yugesh Kothari</h2>
+                  <h3>yugeshk@iitk.ac.in</h3>
+                  <p>Doing Phd at EPFL.
+Interned at Mastercard, MPI.
+</p>
+                  <h4>yugeshk</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/yugeshk" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:yugeshk@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+      <h1>2018 - 19 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/ahsan.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Ahsan Barkati</h2>
+                  <h3>ahsanb@iitk.ac.in</h3>
+                  <p>Software Engineer at Google.
+Completed GSOC in 2019 and 2020 under FreeBSD.
+</p>
+                  <h4>ahsanbarkati</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/ahsanbarkati" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:ahsanb@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/anant.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Anant Prakash</h2>
+                  <h3>anantp@iitk.ac.in</h3>
+                  <p>Doing Masters at CMU'23.
+Previously worked at Rubrik, Dunzo, Tower Research.
+</p>
+                  <h4>apwhitehat</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/apwhitehat" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:anantp@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/ayush.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Ayush Bansal</h2>
+                  <h3>ayushb@iitk.ac.in</h3>
+                  <p>Co-founder & CTO at NimbleEdge.
+Previously Developer at Tower Research.
+</p>
+                  <h4>ayush268</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/ayush268" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:ayushb@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+      <h1>2017 - 18 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/arjun.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Arjun Sinha</h2>
+                  <h3>arjuns@iitk.ac.in</h3>
+                  <p>Software Engineer at Rubrik. Interned at Tower Research in Summer 2018. ACM ICPC World Finalist.</p>
+                  <h4>ajs97</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/ajs97" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:arjuns@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/milind.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Milind Luthra</h2>
+                  <h3>milindl@iitk.ac.in</h3>
+                  <p>Systems Engineer at Quadeye.
+
+Interned at Flipkart, Bangalore in Summer 2018.
+                                                  </p>
+                  <h4>milindl</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/milindl" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:milindl@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/varun.png" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Varun Khare</h2>
+                  <h3>varun@iitk.ac.in</h3>
+                  <p>CEO & Co-founder at NimbleEdge.
+Research Scholar at Max planck Institute in 2019-20.
+                                                                   
+</p>
+                  <h4>varunkhare1234</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/varunkhare1234" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:varun@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/yash.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Yash Srivastav</h2>
+                  <h3>yashsriv@iitk.ac.in</h3>
+                  <p>Research Intern at New York University in Summer 2018.
+Completed GSoC in 2017 under the Linux Foundation.
+</p>
+                  <h4>yashsriv</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/yashsriv" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:yashsriv@iitk.ac.in" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="section-title">
+      <h1>2016 - 17 Coordinators</h1>
+  </div>
+
+  <div class="row1">
+
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/kunal.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Kunal Kapila</h2>
+                  <h3>kunalapila@gmail.com</h3>
+                  <p>PPO at Tower Research.
+Interned at Tower Research in Summer 2017.
+Chairperson Students&#39; Senate 2017-18.
+</p>
+                  <h4>kunalapila</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/kunalapila" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:kunalapila@gmail.com" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/pallav.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Pallav Agarwal</h2>
+                  <h3>pallavagarwal07@gmail.com</h3>
+                  <p>Joining Google, India.
+Interned at Google, NYC in Summer 2017. Successfully
+completed GSoC in 2016 under the Gentoo Foundation.
+</p>
+                  <h4>pallavagarwal07</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/pallavagarwal07" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:pallavagarwal07@gmail.com" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/saksham.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Saksham Sharma</h2>
+                  <h3>saksham0808@gmail.com</h3>
+                  <p>Joining Tower Research, NYC.
+Interned at Google, Seattle in Summer 2017. Has been a
+research fellow at Max Planck Institute for Software System.
+</p>
+                  <h4>sakshamsharma</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/sakshamsharma" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:saksham0808@gmail.com" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="column">
+          <div class="team">
+              <div class="team-img">
+                  <img src="/images/vinayak.jpg" alt="Team Image">
+              </div>
+              <div class="team-content">
+                  <h2>Vinayak Tantia</h2>
+                  <h3>tantia.vinayak1@gmail.com</h3>
+                  <p>Joining Facebook AI Research, Canada.
+Interned at MILA, Canada in Spring 2018 and at Google, India in Summer 2017.
+</p>
+                  <h4>vtantia</h4>
+              </div>
+              <div class="team-social">
+                <a href="https://github.com/vtantia" class="social-tw"> <img  src="/images/github-icon.png" class="social-media-logo"> </a>
+                <a href="https://facebook.com/" class="social-fb"> <img  src="/images/facebook-icon.png" class="social-media-logo"></i></a>
+                <a href="#" class="social-li"> <img  src="/images/linkedin-icon.png" class="social-media-logo"></a>
+                <a href="#" class="social-in"> <img  src="/images/instagram-icon.png" class="social-media-logo"></a>
+                <a href="mailto:tantia.vinayak1@gmail.com" class="social-ml"> <img  src="/images/mail-icon.png" class="social-media-logo"></a>
+              </div>
+          </div>
+      </div>
+     
+
+   </div>
+
+</div>
+
+
 
     </div>
   </article>
@@ -667,90 +1759,15 @@
   
   <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
   <!-- begin footer-widgets -->
+
 <section class="footer-widgets">
   <div class="container">
     <div class="row">
-      <div class="col col-4 col-d-6 col-t-12">
-  <div class="widget widget-recent">
-
-    <div class="widget__head">
-      <h3 class="widget__title">Latest Posts</h3>
-    </div>
-
-    
-    <div class="recent-posts">
-      
-      <a class="recent-posts__image" href="/events/2020/08/30/celebrating-open-source/"><img src="https://i.imgur.com/65nGzJo.png" alt="Celebrating Open Source at IITK!"></a>
-      
-      <div class="recent-posts__content">
-        <div class="article__meta">
-          <span class="article__minutes">
-            
-            
-              2 min read
-            
-          </span>
-          <time class="article__date"
-            datetime="2020-08-30T19:44:00+05:30">Aug 30, 2020</time>
-        </div>
-        <h4 class="recent-posts__title"><a href="/events/2020/08/30/celebrating-open-source/">Celebrating Open Source at IITK!</a></h4>
-        <div class="article__bottom">
-          <div class="article__author">
-            <a href="/about/" aria-label="Programming Club IITK"><img class="article__author-image lazy" data-src="https://clever-darwin-c4b34d.netlify.app/content/images/2021/12/pclub-1.png" alt="Programming Club IITK's Picture"></a>
-          </div>
-          <div class="article__bottom-meta">
-            <a href="/about/" class="article__author-link">Programming Club IITK</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="recent-posts">
-      
-      <a class="recent-posts__image" href="/wocproject/project/2019/10/26/lifeiitk-travis-ci/"><img src="https://i.imgur.com/65nGzJo.png" alt="Travis CI"></a>
-      
-      <div class="recent-posts__content">
-        <div class="article__meta">
-          <span class="article__minutes">
-            
-            
-              1 min read
-            
-          </span>
-          <time class="article__date"
-            datetime="2019-10-26T02:38:00+05:30">Oct 26, 2019</time>
-        </div>
-        <h4 class="recent-posts__title"><a href="/wocproject/project/2019/10/26/lifeiitk-travis-ci/">Travis CI</a></h4>
-        <div class="article__bottom">
-          <div class="article__author">
-            <a href="/about/" aria-label="Programming Club IITK"><img class="article__author-image lazy" data-src="https://clever-darwin-c4b34d.netlify.app/content/images/2021/12/pclub-1.png" alt="Programming Club IITK's Picture"></a>
-          </div>
-          <div class="article__bottom-meta">
-            <a href="/about/" class="article__author-link">Programming Club IITK</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-  </div>
-</div>
-      
-<div class="col col-4 col-d-6 col-t-12">
-  <div class="widget widget-tag-cloud">
-    <div class="widget__head">
-      <h3 class="widget__title">Explore Tags</h3>
-    </div>
-    <div class="tag__cloud">
-      <a href="/tag/analytics/" class="set-1">Analytics</a> <a href="/tag/block-cipher/" class="set-1">Block Cipher</a> <a href="/tag/cryptography/" class="set-1">Cryptography</a> <a href="/tag/des/" class="set-1">DES</a> <a href="/tag/dashboard/" class="set-1">Dashboard</a> <a href="/tag/data-plotting/" class="set-1">Data Plotting</a> <a href="/tag/dynamic-programming/" class="set-1">Dynamic Programming</a> <a href="/tag/lifestyle/" class="set-1">Lifestyle</a> <a href="/tag/ml/" class="set-1">ML</a> <a href="/tag/nature/" class="set-1">Nature</a> <a href="/tag/r/" class="set-1">R</a> <a href="/tag/rest/" class="set-1">Rest</a> <a href="/tag/statistics/" class="set-1">Statistics</a> <a href="/tag/summers/" class="set-1">Summers</a> <a href="/tag/symmetric-cipher/" class="set-1">Symmetric Cipher</a> <a href="/tag/wpc/" class="set-1">WPC</a> <a href="/tag/web-development/" class="set-1">Web Development</a> <a href="/tag/wifi-portal/" class="set-1">Wifi Portal</a> <a href="/tag/angularjs/" class="set-1">angularjs</a> <a href="/tag/augmented_reality/" class="set-1">augmented_reality</a> <a href="/tag/bash/" class="set-1">bash</a> <a href="/tag/competitive/" class="set-5">competitive</a> <a href="/tag/game-dev/" class="set-1">game dev</a> <a href="/tag/git/" class="set-1">git</a> <a href="/tag/gsoc/" class="set-1">gsoc</a> <a href="/tag/html5/" class="set-1">html5</a> <a href="/tag/introduction/" class="set-1">introduction</a> <a href="/tag/ip/" class="set-1">ip</a> <a href="/tag/javascript/" class="set-1">javascript</a> <a href="/tag/lecture/" class="set-1">lecture</a> <a href="/tag/linux/" class="set-1">linux</a> <a href="/tag/meta/" class="set-2">meta</a> <a href="/tag/open-source/" class="set-1">open source</a> <a href="/tag/opensource/" class="set-1">opensource</a> <a href="/tag/optimizing-divergences/" class="set-1">optimizing divergences</a> <a href="/tag/pclub/" class="set-2">pclub</a> <a href="/tag/probabilistic-machine-learning/" class="set-1">probabilistic machine learning</a> <a href="/tag/probability-distributions/" class="set-1">probability distributions</a> <a href="/tag/project/" class="set-4">project</a> <a href="/tag/summer16/" class="set-5">summer16</a> <a href="/tag/tutorial/" class="set-4">tutorial</a> <a href="/tag/vim/" class="set-1">vim</a> <a href="/tag/web-development/" class="set-1">web development</a> <a href="/tag/webd/" class="set-1">webd</a> <a href="/tag/winter19/" class="set-3">winter19</a> <a href="/tag/wocproject/" class="set-3">wocproject</a>
-    </div>
-  </div>
-</div>
-
       
     </div>
   </div>
 </section>
+
 <!-- end footer-widgets -->
 
 <!-- begin footer -->
