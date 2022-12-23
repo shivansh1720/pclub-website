@@ -1,0 +1,75 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+image: '/images/bg.jpg'
+---
+<style>
+  .page{
+    max-width: max-content;
+  }
+</style>
+<div>
+
+  <h1 class="archive-header"></h1>
+  <div style="display: grid;
+            column-gap: 35px;
+            row-gap: 60px;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-between">
+
+
+    {% for post in site.posts %}
+    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+    {% if month != nmonth %}
+    {% if forloop.index != 1 %}{% endif %}
+
+
+  {% endif %}
+
+
+  <div style = "height: 300px; 
+                width: 300px">
+    <a id="route" href="{{ post.url | prepend: site.baseurl }}">
+
+      <div style="
+      background-color: rgba(105, 105, 105, 0.44);
+      background-image: url({{post.image.url}});
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      ">
+        <p style="
+        background-color: rgba(0, 0, 0, 0.57);
+        padding: 30%;
+        color: #DADADA;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0;
+        ">
+        {{ post.date | date: '%B %Y' }}
+        </p>
+      </div>
+
+
+    </a>
+    <div>
+      <a id="route" href="{{ post.url | prepend: site.baseurl }}">
+        <h3 style="padding: 5px 8px;
+        margin-bottom: 0;
+        background-color: #000000;
+        color: #fff;
+        font-size: 17px;
+        text-align: center;
+        border-top: 1px solid #ecdd02;"
+        >{{ post.title }}</h3>
+      </a>
+
+    </div>
+  </div>
+
+  {% endfor %}
+  </div>
+</div>

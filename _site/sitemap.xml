@@ -81,7 +81,7 @@
 <lastmod>2016-08-13T00:25:00+05:30</lastmod>
 </url>
 <url>
-<loc>/competitive/2016/08/13/lizzy'squeries/</loc>
+<loc>/competitive/2016/08/13/lizzy&apos;squeries/</loc>
 <lastmod>2016-08-13T00:25:00+05:30</lastmod>
 </url>
 <url>
@@ -193,10 +193,6 @@
 <lastmod>2017-08-11T10:25:00+05:30</lastmod>
 </url>
 <url>
-<loc>/2018/04/21/It-i-never-too-late-to-be-what-you-might-have-been/</loc>
-<lastmod>2018-04-21T17:31:35+05:30</lastmod>
-</url>
-<url>
 <loc>/probabilistic%20machine%20learning/generative%20networks/2019/04/10/variational-autoencoder/</loc>
 <lastmod>2019-04-10T00:00:00+05:30</lastmod>
 </url>
@@ -250,6 +246,9 @@
 </url>
 <url>
 <loc>/about/</loc>
+</url>
+<url>
+<loc>/archive/</loc>
 </url>
 <url>
 <loc>/contact/</loc>
@@ -355,15 +354,6 @@
 </url>
 <url>
 <loc>/tag/opensource/</loc>
-</url>
-<url>
-<loc>/tag/lifestyle/</loc>
-</url>
-<url>
-<loc>/tag/rest/</loc>
-</url>
-<url>
-<loc>/tag/nature/</loc>
 </url>
 <url>
 <loc>/tag/probabilistic-machine-learning/</loc>
