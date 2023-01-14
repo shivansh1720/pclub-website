@@ -12,7 +12,7 @@ categories:
 - probabilistic machine learning
 - generative networks
 image:
-  url: https://i.imgur.com/65nGzJo.png
+  url: https://i.ytimg.com/vi/d0W_Ab-aZGo/maxresdefault.jpg
 ---
 
 

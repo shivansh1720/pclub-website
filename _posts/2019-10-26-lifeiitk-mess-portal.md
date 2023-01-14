@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://i.imgur.com/65nGzJo.png
+  url: https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1600
 ---
 
 # [Life@IITK](https://github.com/life-iitk)

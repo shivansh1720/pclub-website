@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://i.imgur.com/65nGzJo.png
+  url: https://img.freepik.com/free-photo/handshake-close-up-executives_1098-1384.jpg?w=1380&t=st=1673716444~exp=1673717044~hmac=5049f2ac3a0e610f968019d10c82436a96ba218734a1e231b1e782ff13f28e95
 ---
 
 #### Description

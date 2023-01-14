@@ -12,8 +12,7 @@ categories:
 - project
 
 image:
-  url: https://raw.githubusercontent.com/saransh7/pics/master/14729083_1280036892028146_8754690254501950483_n.jpg
-
+  url: https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-1/277179005_5288947584470370_4327901670099926534_n.jpg?stp=dst-jpg_p148x148&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ZaPnsEplpmIAX_DCN-x&_nc_ht=scontent.fixc2-2.fna&oh=00_AfCJCeBdlAMkclIycxPGuyTHFuBDZlQDBb2hT9nSs0rqBg&oe=63B0F5C7
 ---
 
 # Antaragni App 16
@@ -21,7 +20,7 @@ image:
 ## Synopsis
 
 The objective of this project was to update the android app Antaragni-App 15 making it more dynamic and user-friendly for the Antaragni-16, the Annual cultural festival of IITK. Major changes include integration with the online database of Antaragni.
-The App is available at [https://play.google.com/store/apps/details?id=antaragni.in.antaragni](https://play.google.com/store/apps/details?id=antaragni.in.antaragni)
+The App is available at [https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-1/277179005_5288947584470370_4327901670099926534_n.jpg?stp=dst-jpg_p148x148&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ZaPnsEplpmIAX_DCN-x&_nc_ht=scontent.fixc2-2.fna&oh=00_AfCJCeBdlAMkclIycxPGuyTHFuBDZlQDBb2hT9nSs0rqBg&oe=63B0F5C7](https://play.google.com/store/apps/details?id=antaragni.in.antaragni)
 
 ![image](https://raw.githubusercontent.com/saransh7/pics/master/14729083_1280036892028146_8754690254501950483_n.jpg)
 

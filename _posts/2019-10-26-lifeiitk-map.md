@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://i.imgur.com/65nGzJo.png
+  url: https://thumbs.dreamstime.com/b/street-map-113326.jpg
 ---
 
 #### Description

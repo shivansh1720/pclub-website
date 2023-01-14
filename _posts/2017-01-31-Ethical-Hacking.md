@@ -9,7 +9,7 @@ tags:
 categories:
 - project
 image:
-  url: https://i.imgur.com/65nGzJo.png
+  url: https://www.shutterstock.com/image-photo/hacker-using-laptop-hacking-internet-380107090
 ---
 
 ‘Ethical Hacking’ was a ‘project’ under the PClub with an aim to familiarise the campus junta with the field and to prepare for CTFs. 
