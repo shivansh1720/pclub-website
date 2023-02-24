@@ -1,4 +1,4 @@
-I"S<h1 id="ar-navigation">[AR Navigation]</h1>
+I"W<h1 id="ar-navigation">[AR Navigation]</h1>
 
 <h3 id="about-the-project">About The Project</h3>
 <p>We tried out experimenting Augmented Reality as a summer project. Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed. This will have two fold benefits:</p>
@@ -8,6 +8,8 @@
   <li>Since it shows real time camera feed the user can remain in real world while looking for directions preventing accidents</li>
   <li>Received the <strong>Best Programming Club Project</strong> during the Science &amp; Technology Summer Camp 2016.</li>
 </ul>
+
+<p><img src="https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/eqc/comfort/comfort-gallery/augmented-video/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_59cb/image.MQ6.12.20210705200406.jpeg" alt="image" /></p>
 
 <h3 id="approach-to-inculcate-ar-in-android-app">Approach to inculcate AR in android app</h3>
 <p>Unlike infrared sensors we didn’t have any means to calculate the exact distance of the real time objects in the mobiles so we switched to MATHEMATICS for our answers. OH! Technical Arts also played a key role in devising our strategy.</p>

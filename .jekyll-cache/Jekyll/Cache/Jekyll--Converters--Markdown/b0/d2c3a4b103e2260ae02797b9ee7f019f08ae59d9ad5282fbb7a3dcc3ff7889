@@ -1,8 +1,10 @@
-I"´<h1 id="predicting-foreign-exchange-rates">PREDICTING FOREIGN EXCHANGE RATES</h1>
+I"<h1 id="predicting-foreign-exchange-rates">PREDICTING FOREIGN EXCHANGE RATES</h1>
 
 <h3 id="about-the-project">About the project</h3>
 
 <p>The project is designed to predict foreign exchange rates. It takes opening , maximum and minimum price as inputs and learns and create the model from the trainig data and then you can use that model to predict the closing price of foreign exchange. Training data should be large enough (at least 60,000 sets) in order to predict the output precisely. In our project we are testing our model on a validation set and printing the accuracy as final output.</p>
+
+<p><img src="https://github.com/Sshanu/ml_HR/raw/gh-pages/neural_net2.jpeg" alt="image" /></p>
 
 <h3 id="what-we-learnt">What we learnt</h3>
 
