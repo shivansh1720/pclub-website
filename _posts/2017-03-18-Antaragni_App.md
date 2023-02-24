@@ -11,8 +11,8 @@ tags:
 categories:
 - project
 
-image:
-  url: https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-1/277179005_5288947584470370_4327901670099926534_n.jpg?stp=dst-jpg_p148x148&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ZaPnsEplpmIAX_DCN-x&_nc_ht=scontent.fixc2-2.fna&oh=00_AfCJCeBdlAMkclIycxPGuyTHFuBDZlQDBb2hT9nSs0rqBg&oe=63B0F5C7
+# image:
+#   url: https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-1/277179005_5288947584470370_4327901670099926534_n.jpg?stp=dst-jpg_p148x148&_nc_cat=100&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=ZaPnsEplpmIAX_DCN-x&_nc_ht=scontent.fixc2-2.fna&oh=00_AfCJCeBdlAMkclIycxPGuyTHFuBDZlQDBb2hT9nSs0rqBg&oe=63B0F5C7
 ---
 
 # Antaragni App 16
