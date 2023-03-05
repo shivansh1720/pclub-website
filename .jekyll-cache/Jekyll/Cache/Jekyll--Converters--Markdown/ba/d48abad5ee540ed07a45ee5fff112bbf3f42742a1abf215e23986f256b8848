@@ -1,13 +1,12 @@
-I"§<h1 id="wifi-captive-portal-and-administrator-dashboard"><a href="https://abhinavtripathi95.github.io/">WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD</a></h1>
+I"ÿ
+<h1 id="wifi-captive-portal-and-administrator-dashboard"><a href="https://abhinavtripathi95.github.io/">WIFI CAPTIVE PORTAL AND ADMINISTRATOR DASHBOARD</a></h1>
 
 <h2 id="synopsis">Synopsis</h2>
 <p>The objective of the project was to create a system for authenticating users for free WiFi and a dashboard for the management of the same.
 When the user connects to the WiFi network, the user is prompted to type in his/her mobile number. The system will generate an OTP and the OTP is sent to the user via SMS. The user is prompted to enter the OTP. If the codes match, the user is then given limited access to the internet.</p>
 
-<p><img src="https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/w2.jpeg" alt="image,center" />
-<br />Wifi Login Portal: Authentication using Mobile Number.</p>
-
-<p><img src="https://github.com/abhinavtripathi95/abhinavtripathi95.github.io/blob/master/tiltviewer/imgs/2.png" alt="image,center" />
+<p><img src="https://cdn-media-1.freecodecamp.org/images/1*4fjLFJXN544emyaBHxpTuw.png" alt="image,center" />
+<br />Wifi Login Portal: Authentication using Mobile Number.
 <br />Dashboard showing summary of connected devices.</p>
 <h2 id="tasks">Tasks</h2>
 <p>The project had following main tasks to perform:</p>
