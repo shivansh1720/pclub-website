@@ -2,29 +2,26 @@
 layout: page
 title: About
 permalink: /about/
-image: '/images/bg.jpg'
 ---
+<p align="center">
+<img src="/images/pclub_logo.png" style="width:500px; height:500px;"/>
+</p>
+Programming Club (or PClub) is a community of students highly enthusiastic about coding, ethical hacking, Web Designing and all other aspects of programming. We are a team currently of 4 coordinators (pre-final year) and 24 secretaries (sophomores).
 
-Hi, my name is Robert Wilson. Sin tantum modo ad indicia veteris memoriae virtute cognoscenda, curiosorum. Haec et tu ita posuisti, et verba vestra sunt. Idemne potest esse dies saepius, qui semel fuit? Ampulla enim sit necne sit, quis non iure optimo irrideatur, si laboret? Ego vero volo in virtute vim esse quam maximam. Serpere genere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis. Conferam tecum, quam cuique verso rem subicias; Si longus, levis. Neque enim disputari sine reprehensione nec cum iracundia aut pertinacia recte disputari disseretur inter.
+Our Instagram [page](https://www.instagram.com/pclubiitk/) boasts around 1.7K followers and is a hub for programming-related posts and information. We use it to share exciting updates, promote events, engage with our community, and put out informative posts that keep our followers up-to-date on the latest in the programming world.
 
-![Time to think]({{site.baseurl}}/images/501.jpg)
-*Minimalism / [Unsplash](https://unsplash.com/)*
+We organize activities related to Development (Web Development, Open Source, Game/App Development), programming contests, hackathons, Capture The Flag contests, et all. Lecture series are regularly taken on algorithms, web hijacking, development, among other things.
 
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem percipi quam rebus exquisitissimis ad epulandum. Non enim iam stirpis bonum quaeret, sed animalis. Qui autem esse poteris, nisi te amor ipse ceperit? Sic igitur in homine perfectio ista in eo potissimum, quod est optimum, id est in virtute, laudatur. An, partus ancillae sitne in fructu disseretur sine reprehensione iracundia.
+Programming Club is also dedicated to developing various applications that are beneficial for the campus junta, such as Puppy Love (during Valentine's week), Student Search, Linux Install fest, and promoting open-source software.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/900.jpg">
-    <img src="/images/901.jpg">
-    <img src="/images/902.jpg">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
+During summers, we offer a large number of projects to the first year students through our Summer Camp. The 2022 Summer Camp saw close to 300 applicants.
 
-In omni enim arte vel studio vel quavis scientia vel in ipsa virtute optimum quidque rarissimum est. Quod est, ut dixi, habere ea, quae secundum naturam sint, vel omnia vel plurima et maxima. Quodsi ipsam honestatem undique pertectam atque absolutam. Tecum optime, deinde etiam cum mediocri amico. Neque enim disputari sine pertectam reprehensione nec cum iracundia aut pertinacia recte disputari potest. An, partus ancillae sitne in fructu habendus, disseretur inter principes civitatis, P. Ut in geometria, prima si dederis, danda sunt omnia. Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles. Servari enim iustitia nisi a forti viro, nisi a sapiente nona civitatis.
+Feel free to contact any of our members any time in case of any queries! We hang out on [Discord](https://discord.gg/RGSSrYDTKw)
 
-<p><iframe src="https://www.youtube.com/embed/QyQ85DEVpbc" frameborder="0" allowfullscreen></iframe></p>
+Happy Coding!
 
-Ego quoque, inquit, didicerim libentius si quid attuleris, quam te reprehenderim. Iam insipientes alios ita esse, ut nullo modo ad sapientiam possent pervenire, alios, qui possent, si id egissent, sapientiam consequi. Id quaeris, inquam, in quo, utrum respondero, verses te huc atque illuc necesse est. Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes. Quod enim fitus dissolutum sit, id esse sine sensu, utilitas quod autem sine sensu sit, id nihil ad nos pertinere omnino. Idne consensisse de Calatino plurimas gentis arbitramur, primarium populi fuisse, quod praestantissimus fuisset in conficiendis voluptatibus? Utram tandem linguam nescio.
+{% highlight js %}
+while(!(succeed = try () ));
+{% endhighlight %}
 
-<hr>
+
