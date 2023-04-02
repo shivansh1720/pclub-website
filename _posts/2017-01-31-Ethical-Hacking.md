@@ -9,7 +9,7 @@ tags:
 categories:
 - project
 image:
-  # url: https://www.shutterstock.com/image-photo/hacker-using-laptop-hacking-internet-380107090
+  url: https://www.astatraining.com/wp-content/uploads/2020/03/what-is-an-ethical-hacker.jpg
 summary: "Ethical Hacking was a project under the PClub with an aim to familiarise the campus junta with the field and to prepare for CTFs."
 ---
 

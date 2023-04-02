@@ -12,6 +12,8 @@ categories:
 - project
 
 summary: "Our aim was to design a navigation app which instead of showing top view of map shows directions on real time camera feed."
+image:
+    url: https://www.la.mercedes-benz.com/en/passengercars/mercedes-benz-cars/models/eqc/comfort/comfort-gallery/augmented-video/_jcr_content/par/productinfotextimage/media2/slides/videoimageslide_59cb/image.MQ6.12.20210705200406.jpeg
 ---
 
 # [AR Navigation]

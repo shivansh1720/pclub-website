@@ -12,7 +12,7 @@ categories:
 - project
 
 image:
-  # url: http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation.jpg
+  url: http://raw.githubusercontent.com/sagnikb/Simulati-ON/master/Pics/simulation.jpg
 
 summary: "The N-body simulation is an interesting topic in Physics, and finds applications in astrophysics, biomoecular studies"
 

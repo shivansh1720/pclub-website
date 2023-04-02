@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://blog.travis-ci.com/images/travis-mascot-200px.png
+  url: /images/travis.png
 ---
 
 #### Description
