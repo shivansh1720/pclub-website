@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://www.shutterstock.com/image-photo/blog-blogging-homepage-social-media-network-381746308
+  url: /images/blog.jpg
 ---
 
 #### Description

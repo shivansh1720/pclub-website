@@ -11,7 +11,7 @@ tags:
 categories:
 - wocproject
 image:
-  url: https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1600
+  url: /images/music.png
 ---
 
 #### Description
