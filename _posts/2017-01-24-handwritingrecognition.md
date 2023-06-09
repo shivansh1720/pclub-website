@@ -12,7 +12,7 @@ categories:
 - project
 
 image:
-  url: images/mnist_100_digits.png
+  url: /images/mnist_100_digits.png
 
 summary: "Using neural networks and optimization the model learns the similarities of the training datasets which have a common result"
 
