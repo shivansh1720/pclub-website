@@ -21,11 +21,15 @@
                 <span class="featured-post ion ion-ios-star-outline"></span>
                 {% endif %}
 
-                {% if post.image %}
+                
                 <a class="article__image" href="{{post.url | prepend: site.baseurl}}">
+                  {% if post.image.url %}
                   <img src="{{post.image.url}}" alt="{{post.title}}">
+                  {% else %}
+                  <img src="/images/bg.jpg" alt="{{post.title}}">
+                  {% endif %}
                 </a>
-                {% endif %}
+                
 
                 <div class="article__content">
 
