@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-title: #Programming Club IITK
+title: Programming Club | IITK
 logo: '/images/pclub.png' # You can add own logo. For example '/images/logo.png'.
 description: The Programming Club, IIT Kanpur
 baseurl: "" # The subpath of your site, e.g. /blog
