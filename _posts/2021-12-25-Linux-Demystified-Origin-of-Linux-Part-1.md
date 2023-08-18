@@ -23,7 +23,7 @@ Linus Torvalds (the creator of LINUX) had already considered the name Linux but 
 
 Here we will talk about the origins, versions, and predecessors of present-day Linux systems. Our story begins way back in 1969 with the development of UNIX.
 
-![](/images/0__vEtTa__8X__cTHNIF3.png)
+{% include lazyload.html image_src="/images/0__vEtTa__8X__cTHNIF3.png" %}
 
 ### UNIX v0.0
 

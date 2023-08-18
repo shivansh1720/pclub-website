@@ -23,7 +23,7 @@ image:
 This post will serve as a list of things you should and should not do while you get into coding.
 First off, coding is not this:
 
-![](https://i.ytimg.com/vi/aGujPFCKgdU/hqdefault.jpg)
+{% include lazyload.html image_src="https://i.ytimg.com/vi/aGujPFCKgdU/hqdefault.jpg" %}
 
 Well, not to begin with, atleast. It'll be plain, but we'll get there in a while :smile:
 
