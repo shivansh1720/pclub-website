@@ -17,7 +17,7 @@ image:
 
 It can be intimidating to contribute to open source. Making a Pull Request (PR) is the first barrier you need to overcome. To encourage everyone, Programming Club is awarding a free T-Shirt to anyone who makes his/her first successful Pull Request to a reputable third party repository.
 
-![](http://i.imgur.com/NFf5CQ6.jpg)
+{% include lazyload.html image_src="http://i.imgur.com/NFf5CQ6.jpg" %}
 
 To qualify for the prize, the repository needs to:
 * Be older than 15th January 2017.

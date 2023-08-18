@@ -13,7 +13,7 @@ image:
   url: https://raw.githubusercontent.com/pclubiitk/pclub.in/master/assets/image/summer.png
 ---
 <center>
-  <img src="https://raw.githubusercontent.com/pclubiitk/pclub.in/master/assets/image/summer.png" style="width: 70%;">
+  <img data-src="https://raw.githubusercontent.com/pclubiitk/pclub.in/master/assets/image/summer.png" style="width: 70%;">
 </center>
 
 Hello everyone! 

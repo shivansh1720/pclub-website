@@ -8,7 +8,7 @@
     {% for post in site.posts limit:2 %}
     <div class="recent-posts">
       {% if post.image %}
-      <a class="recent-posts__image" href="{{ post.url }}"><img src="{{post.image.url}}" alt="{{post.title}}"></a>
+      <a class="recent-posts__image" href="{{ post.url }}"><img data-src="{{post.image.url}}" alt="{{post.title}}" class="blur-up lazyload"></a>
       {% endif %}
       <div class="recent-posts__content">
         <div class="article__meta">
