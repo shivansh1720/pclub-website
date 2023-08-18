@@ -70,9 +70,9 @@ img {
     <a id="route" href="{{ post.url | prepend: site.baseurl }}">
       <div class="post-container">
         {% if post.image %}
-        <img src="{{ post.image.url }}" alt="Post Image">
+        <img data-src="{{ post.image.url }}" alt="Post Image" class="blur-up lazyload">
         {% else %}
-        <img src="/images/bg.jpg" alt="Default Image">
+        <img data-src="/images/bg.jpg" alt="Default Image" class="blur-up lazyload">
         {% endif %}
         <div class="overlay">{{ post.date | date: '%B %Y' }}</div>
       </div>
