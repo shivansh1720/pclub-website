@@ -21,7 +21,9 @@ With thinner depletion layers in transistors, electrons will have significant pr
 
 Like classical computing is based on manipulating sequences of 0s and 1s called bits, Quantum Computing is based on manipulating quantum bits, called **qubits**. A qubit can take values 0, 1 and anything between 0 and 1 (superposition of 0 and 1). Since a single qubit can be a **superposition of 0 and 1 at the same time**, it can carry **exponentially more data** as compared to a classical bit. For example, 1 qubit is needed to send as much information as contained by 2 classical bits (made possible by cleverly using entangled qubits and quantum gates, see superdense coding for more details). There is a caveat to this seemingly infinite data storage though. All quantum superpositions _collapse_ to one of the values when someone tries to measure them, with a certain probability associated to what is being measured. Here lies one of the main challenges of quantum computing - to cleverly manipulate qubits to solve computational problems.
 
+<center>
 {% include lazyload.html image_src="/images/quantum_computing_qubit.png" %}
+</center>
 
 In quantum computing notation, 0 is represented as $\|0 \rangle$ and 1 as $\|{1} \rangle$ (for reasons beyond the scope of this blog). A general qubit can be in superposition of these 2 states and can be represented as $a\|{0} \rangle + b\|{1} \rangle$, where $a$ and $b$ are complex numbers. The probability of measuring the qubit as $\|{0} \rangle$ is $\|a\|^2$ and $\|{1} \rangle$ is $\|b\|^2$. As sum of probabilities is 1, $\|a\|^2+\|b\|^2=1$. In the diagram above, the qubit has equal probability of being measured as $\|{0} \rangle$ or $\|{1} \rangle$.
 
